@@ -9,15 +9,20 @@
 			<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
 		<![endif]-->
 		
-		<!--
-		<script type="text/javascript" src="./js/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="./js/jquery.hints.js"></script>
-		<script type="text/javascript" src="./js/jquery.cookie.js"></script>
-		<script type="text/javascript" src="./js/slideshow.js"></script>
-		<script type="text/javascript" src="./js/feedback.js"></script>
-		-->
+		<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+		
+		<!--[if (IE 7)|(IE 8)]>
+			<script type="text/javascript" src="./js/background-manager.js"></script>
+		<![endif]-->
 	</head>
 	<body>
+		<div class="l-back-layer">
+			<!--[if (IE 7)|(IE 8)]>
+				<script type="text/javascript">
+					backgroundManager.init();
+				</script>
+			<![endif]-->
+		</div>
 		<div class="l-header">
 			<h1>Infolio</h1>
 		</div>
