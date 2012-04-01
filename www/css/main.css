@@ -139,6 +139,17 @@ SUB {
 
 /* =Layout
 --------------------------------------- */
+.l-header {
+	}
+.l-content {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+	}
+.l-footer {
+	width: 820px;
+	margin: 0 auto;
+	}
 
 /* =Clearfix and global
 --------------------------------------- */
