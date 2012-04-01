@@ -10,17 +10,18 @@
 		<![endif]-->
 		
 		<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="./js/contents.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
 		
 		<!--[if (IE 7)|(IE 8)]>
-			<script type="text/javascript" src="./js/background-manager.js"></script>
+			<script type="text/javascript" src="./js/cover-background.js"></script>
 		<![endif]-->
 	</head>
 	<body>
 		<div class="l-back-layer">
 			<!--[if (IE 7)|(IE 8)]>
 				<script type="text/javascript">
-					backgroundManager.init();
+					coverBackground.init();
 				</script>
 			<![endif]-->
 		</div>
@@ -32,36 +33,73 @@
 		<div class="l-content">
 			<div id="contents" class="b-contents">
 				<div class="inner">
-					<ul class="list">
-						<li class="item">
-							<a href="#" class="link" style="background: #121e2b; color: #FFF;">Делаем</a>
-						</li>
-						<li class="item">
-							<a href="#" class="link">Мы</a>
-						</li>
-						<li class="item">
-							<a href="#" class="link">Клиенты</a>
-						</li>
-						<li class="item">
-							<a href="#" class="link">Избранное</a>
-						</li>
-						<li class="item">
-							<a href="#" class="link">Контакты</a>
-						</li>
-					</ul>
+					<div class="container">
+						<div class="slider">
+							<ul class="list">
+								<li class="item">
+									<span class="text">Делаем</span>
+								</li>
+								<li class="item">
+									<span class="text">Мы</span>
+								</li>
+								<li class="item">
+									<span class="text">Клиенты</span>
+								</li>
+								<li class="item">
+									<span class="text">Избранное</span>
+								</li>
+								<li class="item">
+									<span class="text">Контакты</span>
+								</li>
+							</ul>
+						</div>
+						<ul class="list">
+							<li class="item">
+								<a href="#services" class="link">Делаем</a>
+							</li>
+							<li class="item">
+								<a href="#about" class="link">Мы</a>
+							</li>
+							<li class="item">
+								<a href="#clients" class="link">Клиенты</a>
+							</li>
+							<li class="item">
+								<a href="#portfolio" class="link">Избранное</a>
+							</li>
+							<li class="item">
+								<a href="#contacts" class="link">Контакты</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="b-section">
+			<div id="services" class="b-section">
+				<h2 class="b-first-title">Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
+				<p>Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
+				<p class="b-last-textblock">Мы&nbsp;специализируемся на&nbsp;разработке комплексных <a href="?">интернет-решений</a>. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
+				<h2>Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
+				<p>Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
+				<p class="b-last-textblock">Мы&nbsp;специализируемся на&nbsp;разработке комплексных <a href="?">интернет-решений</a>. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
+				<h2>Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
+				<p>Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
+				<p class="b-last-textblock">Мы&nbsp;специализируемся на&nbsp;разработке комплексных <a href="?">интернет-решений</a>. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
+			</div>
+			<div id="about" class="b-section">
 				<h2 class="b-first-title">Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
 				<p>Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
 				<p class="b-last-textblock">Мы&nbsp;специализируемся на&nbsp;разработке комплексных <a href="?">интернет-решений</a>. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
 			</div>
-			<div class="b-section">
-				<h2 class="b-first-title">Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
-				<p>Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
-				<p class="b-last-textblock">Мы&nbsp;специализируемся на&nbsp;разработке комплексных <a href="?">интернет-решений</a>. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
+			<div id="clients" class="b-section">
+				<h3 class="b-first-title">Одними из&nbsp;первых в&nbsp;России мы&nbsp;начали разрабатывать приложения для Smart-TV</h3>
+				<p>Smart-TV&nbsp;&mdash; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&nbsp;телевизорах Samsung, LG, Panasonic и&nbsp;может выступать как одним из&nbsp;способов рекламы, так и&nbsp;приносить реальный доход.</p>
+				<p class="b-last-textblock">Мы&nbsp;разработали одни из&nbsp;самых крупных приложений для Smart-TV, Yota Музыка и&nbsp;Yota Play.</p>
 			</div>
-			<div class="b-section b-last-textblock">
+			<div id="portfolio" class="b-section">
+				<h3 class="b-first-title">Одними из&nbsp;первых в&nbsp;России мы&nbsp;начали разрабатывать приложения для Smart-TV</h3>
+				<p>Smart-TV&nbsp;&mdash; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&nbsp;телевизорах Samsung, LG, Panasonic и&nbsp;может выступать как одним из&nbsp;способов рекламы, так и&nbsp;приносить реальный доход.</p>
+				<p class="b-last-textblock">Мы&nbsp;разработали одни из&nbsp;самых крупных приложений для Smart-TV, Yota Музыка и&nbsp;Yota Play.</p>
+			</div>
+			<div id="contacts" class="b-section b-last-textblock">
 				<h3 class="b-first-title">Одними из&nbsp;первых в&nbsp;России мы&nbsp;начали разрабатывать приложения для Smart-TV</h3>
 				<p>Smart-TV&nbsp;&mdash; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&nbsp;телевизорах Samsung, LG, Panasonic и&nbsp;может выступать как одним из&nbsp;способов рекламы, так и&nbsp;приносить реальный доход.</p>
 				<p class="b-last-textblock">Мы&nbsp;разработали одни из&nbsp;самых крупных приложений для Smart-TV, Yota Музыка и&nbsp;Yota Play.</p>

@@ -1,7 +1,7 @@
 ﻿/**
  * Имитация background-size: cover
  */
-var backgroundManager = (function(){
+var coverBackground = (function(){
 	var SETTINGS = {
 		illustrationContainerSelector: '.l-back-layer',
 		illustrationClass: 'b-illustration'

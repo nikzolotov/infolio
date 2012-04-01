@@ -1,5 +1,6 @@
 ﻿/* hasLayout */
-.l-wrapper {
+.l-wrapper,
+* HTML .b-contents .item {
 	zoom: 1;
 	}
 
