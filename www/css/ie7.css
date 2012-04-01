@@ -2,3 +2,20 @@
 .l-wrapper {
 	zoom: 1;
 	}
+
+/* Layout */
+* HTML .l-back-layer {
+	display: none;
+	}
+
+/* Global */
+* HTML .g-png {
+	filter: expression("progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.firstChild.src + "', sizingMethod='image')");
+	zoom: 1;
+	}
+* HTML .g-png IMG {
+	behavior: expression(this.style.visibility="hidden");
+	}
+* HTML .g-png-link {
+	cursor: pointer;
+	}
