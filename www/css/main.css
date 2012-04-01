@@ -170,6 +170,8 @@ SUB {
 	z-index: 2;
 	width: 820px;
 	margin: 0 auto;
+	padding: 38px 0 70px 0;
+	color: #1b2029;
 	}
 
 /* =Clearfix and global
@@ -202,6 +204,12 @@ SUB {
 		max-width: 1033px;
 		margin: 0 auto;
 		}
+
+/* Copyright */
+.b-copyright {
+	font-size: 12px;
+	line-height: 16px;
+	}
 
 /* =Simple blocks
 --------------------------------------- */
@@ -237,8 +245,59 @@ SUB {
 
 /* Last text block (paragraph, list, table, definition list) has no bottom margin */
 .b-last-textblock {
-    margin-bottom: 0 !important;
-    }
+	margin-bottom: 0 !important;
+	}
+
+/* Page contents */
+.b-contents {
+	position: absolute;
+	top: 0;
+	right: -130px;
+	}
+	.b-contents .list {
+		width: 100px;
+		margin: 0;
+		background: #FFF;
+		font-size: 11px;
+		line-height: 14px;
+		
+		-moz-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+		-webkit-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+		-o-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+		box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+		}
+		.b-contents .item {
+			margin: 0;
+			}
+		.b-contents .item:before {
+			display: none;
+			content: none;
+			}
+			.b-contents .link {
+				display: block;
+				padding: 13px 18px;
+				text-decoration: none;
+				color: #1B2029;
+				}
+			.b-contents .link:hover {
+				background: #B8D1D4;
+				}
+.b-contents-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	}
+	.b-contents-fixed .inner {
+		position: relative;
+		width: 900px;
+		margin: 0 auto;
+		}
+		.b-contents-fixed .list {
+			position: absolute;
+			top: 30px;
+			right: -130px;
+			}
 
 /* =Containers
 --------------------------------------- */
@@ -249,10 +308,10 @@ SUB {
 	padding: 32px 40px 34px 40px;
 	background: #FFF;
 	
-	-moz-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
-	-webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
-	-o-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
-	box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+	-moz-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	-o-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
 	}
 
 /* =Form elements
