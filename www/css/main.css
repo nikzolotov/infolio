@@ -217,22 +217,24 @@ SUB {
 /* Icons */
 .b-icon {
 	position: absolute;
-	width: 24px;
-	height: 24px;
-	margin: -2px 0 0 -30px;
+	width: 16px;
+	height: 16px;
+	margin-left: -20px;
 	overflow: hidden;
 	}
 	.b-icon B {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 75px;
-		height: 25px;
+		width: 16px;
+		height: 16px;
 		background: url('../img/icons.png') no-repeat;
 		text-indent: -9999px;
 		}
-.b-icon-current B {
-	left: -50px;
+.b-icon-current-l {
+	top: 50%;
+	left: -16px;
+	margin: -8px 0 0 0;
 	}
 
 /* =Content blocks
@@ -266,16 +268,21 @@ SUB {
 		.b-contents .slider {
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -7px;
 			width: 100px;
 			height: 40px;
+			padding-left: 7px;
 			overflow: hidden;
-			background: #121E2B;
 			}
 			.b-contents .slider .list {
 				position: absolute;
 				top: 0;
-				left: 0;
+				left: 7px;
+				width: 100px;
+				background: #121E2B;
+				}
+			.b-contents .b-icon-current-l {
+				left: -9px;
 				}
 		.b-contents .list {
 			margin: 0;
