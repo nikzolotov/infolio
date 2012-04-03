@@ -1,6 +1,8 @@
 ﻿/* hasLayout */
 .l-wrapper,
-* HTML .b-contents .item {
+* HTML .b-contents .item,
+* HTML .b-slide,
+* HTML .b-brands {
 	zoom: 1;
 	}
 
@@ -19,4 +21,9 @@
 	}
 * HTML .g-png-link {
 	cursor: pointer;
+	}
+
+/* Content blocks */
+* HTML .b-brands .item {
+	display: inline;
 	}

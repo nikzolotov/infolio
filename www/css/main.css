@@ -178,7 +178,8 @@ SUB {
 --------------------------------------- */
 
 /* Clearfix */
-.l-wrapper:after {
+.l-wrapper:after,
+.b-tabs:after {
 	content: '.';
 	display: block;
 	height: 0;
@@ -226,8 +227,8 @@ SUB {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 16px;
-		height: 16px;
+		width: 34px;
+		height: 17px;
 		background: url('../img/icons.png') no-repeat;
 		text-indent: -9999px;
 		}
@@ -236,6 +237,14 @@ SUB {
 	left: -16px;
 	margin: -8px 0 0 0;
 	}
+.b-icon-current-b {
+	bottom: -16px;
+	left: 50%;
+	margin-left: -8px;
+	}
+	.b-icon-current-b B {
+		left: -17px;
+		}
 
 /* =Content blocks
 --------------------------------------- */
@@ -329,6 +338,133 @@ SUB {
 			top: 30px;
 			right: -130px;
 			}
+
+/* Tabs */
+.b-tabs {
+	margin: -32px -40px 40px -40px;
+	font-size: 12px;
+	line-height: 14px;
+	}
+	.b-tabs .item {
+		float: left;
+		width: 179px;
+		margin: 0 1px 0 0;
+		}
+	.b-tabs .item:before {
+		content: none;
+		display: none;
+		}
+		.b-tabs .link {
+			position: relative;
+			display: block;
+			padding: 13px 18px;
+			background: #49505D;
+			text-decoration: none;
+			text-align: center;
+			color: #FFF;
+			}
+			.b-tabs .b-icon-current-b {
+				display: none;
+				}
+		.b-tabs .link:hover {
+			background: #718587;
+			}
+		.b-tabs .selected,
+		.b-tabs .selected:hover {
+			cursor: default;
+			background: #1B2029;
+			}
+			.b-tabs .selected .b-icon-current-b {
+				display: block;
+				}
+	.b-tabs .last {
+		width: 180px;
+		margin-right: 0;
+		}
+
+/* Presentation slide: image and description */
+.b-slide {
+	margin-bottom: 84px;
+	overflow: hidden;
+	}
+	.b-slide .image {
+		float: left;
+		width: 412px;
+		padding: 0 74px 0 14px;
+		}
+	.b-slide .desc {
+		float: left;
+		width: 290px;
+		font-size: 12px;
+		line-height: 15px;
+		}
+		.b-slide .title {
+			margin: 4px 0 22px 0;
+			}
+
+/* Brands strip */
+.b-brands {
+	margin: 0 0 -4px -52px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	}
+	.b-brands .item {
+		position: relative;
+		float: left;
+		width: 80px;
+		height: 26px;
+		margin: 0 0 0 63px;
+		padding-top: 16px;
+		overflow: hidden;
+		}
+	.b-brands .item:before {
+		content: none;
+		display: none;
+		}
+		.b-brands .image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 42px;
+			background: url('../img/brands.png') no-repeat;
+			}
+	.b-brands .samsung {
+		width: 110px;
+		}
+	.b-brands .lg {
+		width: 63px;
+		}
+		.b-brands .lg .image {
+			background-position: 0 -43px;
+			}
+	.b-brands .philips {
+		width: 72px;
+		}
+		.b-brands .philips .image {
+			background-position: 0 -86px;
+			}
+	.b-brands .panasonic {
+		width: 98px;
+		}
+		.b-brands .panasonic .image {
+			background-position: 0 -129px;
+			}
+	.b-brands .sony {
+		width: 91px;
+		}
+		.b-brands .sony .image {
+			background-position: 0 -172px;
+			}
+	.b-brands .wd {
+		width: 48px;
+		}
+		.b-brands .wd .image {
+			background-position: 0 -215px;
+			}
+
 
 /* =Containers
 --------------------------------------- */
