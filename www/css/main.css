@@ -227,8 +227,8 @@ SUB {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 34px;
-		height: 17px;
+		width: 202px;
+		height: 151px;
 		background: url('../img/icons.png') no-repeat;
 		text-indent: -9999px;
 		}
@@ -244,6 +244,23 @@ SUB {
 	}
 	.b-icon-current-b B {
 		left: -17px;
+		}
+.b-icon-complex {
+	width: 100px;
+	height: 100px;
+	margin: -10px 0 0 -113px;
+	}
+	.b-icon-complex B {
+		top: -49px;
+		}
+.b-icon-weight {
+	width: 100px;
+	height: 100px;
+	margin: -14px 0 0 -115px;
+	}
+	.b-icon-weight B {
+		top: -49px;
+		left: -101px;
 		}
 
 /* =Content blocks
@@ -520,6 +537,25 @@ SUB {
 			background-position: 0 -602px;
 			}
 
+/* About block */
+.b-about {
+	padding: 28px 0 42px 0;
+	}
+	.b-about .title {
+		margin: 0 0 70px 0;
+		padding: 0 130px;
+		}
+	.b-about .desc {
+		overflow: hidden;
+		}
+		.b-about .message {
+			float: left;
+			width: 254px;
+			margin: 0 0 0 108px;
+			}
+		.b-about .second {
+			margin-left: 198px;
+			}
 
 /* =Containers
 --------------------------------------- */

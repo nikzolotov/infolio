@@ -2,7 +2,8 @@
 .l-wrapper,
 * HTML .b-contents .item,
 * HTML .b-slide,
-* HTML .b-brands {
+* HTML .b-brands,
+.b-about .desc {
 	zoom: 1;
 	}
 
@@ -25,5 +26,8 @@
 
 /* Content blocks */
 * HTML .b-brands .item {
+	display: inline;
+	}
+* HTML .b-about .message {
 	display: inline;
 	}
