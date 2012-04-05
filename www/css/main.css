@@ -367,7 +367,7 @@ SUB {
 				display: none;
 				}
 		.b-tabs .link:hover {
-			background: #718587;
+			background: #668189;
 			}
 		.b-tabs .selected,
 		.b-tabs .selected:hover {
@@ -384,7 +384,7 @@ SUB {
 
 /* Presentation slide: image and description */
 .b-slide {
-	margin-bottom: 84px;
+	height: 368px;
 	overflow: hidden;
 	}
 	.b-slide .image {
@@ -395,11 +395,12 @@ SUB {
 	.b-slide .desc {
 		float: left;
 		width: 290px;
+		padding-right: 30px;
 		font-size: 12px;
 		line-height: 15px;
 		}
 		.b-slide .title {
-			margin: 4px 0 22px 0;
+			margin: 4px -30px 28px 0;
 			}
 
 /* Brands strip */
@@ -463,6 +464,60 @@ SUB {
 		}
 		.b-brands .wd .image {
 			background-position: 0 -215px;
+			}
+	.b-brands .google {
+		width: 76px;
+		}
+		.b-brands .google .image {
+			background-position: 0 -258px;
+			}
+	.b-brands .yandex {
+		width: 62px;
+		}
+		.b-brands .yandex .image {
+			background-position: 0 -301px;
+			}
+	.b-brands .rambler {
+		width: 102px;
+		}
+		.b-brands .rambler .image {
+			background-position: 0 -344px;
+			}
+	.b-brands .facebook {
+		width: 81px;
+		}
+		.b-brands .facebook .image {
+			background-position: 0 -387px;
+			}
+	.b-brands .twitter {
+		width: 79px;
+		}
+		.b-brands .twitter .image {
+			background-position: 0 -430px;
+			}
+	.b-brands .vkontakte {
+		width: 99px;
+		}
+		.b-brands .vkontakte .image {
+			background-position: 0 -473px;
+			}
+	.b-brands .html5 {
+		width: 28px;
+		}
+		.b-brands .html5 .image {
+			background-position: 0 -516px;
+			}
+	.b-brands .ios {
+		width: 41px;
+		}
+		.b-brands .ios .image {
+			background-position: 0 -559px;
+			}
+	.b-brands .android {
+		width: 102px;
+		}
+		.b-brands .android .image {
+			background-position: 0 -602px;
 			}
 
 
