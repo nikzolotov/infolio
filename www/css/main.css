@@ -557,6 +557,69 @@ SUB {
 			margin-left: 198px;
 			}
 
+/* Project */
+.b-project {
+	height: 690px;
+	margin: -32px -40px -34px -40px;
+	}
+	.b-project .illustration {
+		display: block;
+		margin-bottom: 14px;
+		}
+	.b-project .intro {
+		float: left;
+		width: 170px;
+		padding: 0 60px 0 40px;
+		}
+		.b-project .title {
+			margin: 0 0 12px 0;
+			font: normal 16px/19px Arial, Helvetica, sans-serif;
+			}
+		.b-project .meta {
+			font-size: 11px;
+			line-height: 14px;
+			}
+	.b-project .desc {
+		float: left;
+		width: 320px;
+		padding: 3px 60px 0 0;
+		font-size: 11px;
+		line-height: 14px;
+		}
+	.b-project .b-previews {
+		float: left;
+		width: 260px;
+		padding-top: 7px;
+		}
+
+/* Image previews */
+.b-previews {
+	margin: 0 0 18px -10px;
+	font-size: 11px;
+	line-height: 12px;
+	}
+	.b-previews .item {
+		float: left;
+		margin: 0 0 0 10px;
+		}
+	.b-previews .item:before {
+		content: none;
+		display: none;
+		}
+		.b-previews .link {
+			display: block;
+			}
+			.b-previews .image {
+				display: block;
+				}
+		.b-previews .selected {
+			margin: -2px;
+			}
+			.b-previews .selected .image {
+				border: 2px solid #1b2029;
+				}
+
+
 /* =Containers
 --------------------------------------- */
 

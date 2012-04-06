@@ -3,7 +3,8 @@
 * HTML .b-contents .item,
 * HTML .b-slide,
 * HTML .b-brands,
-.b-about .desc {
+.b-about .desc,
+.b-section {
 	zoom: 1;
 	}
 
@@ -31,3 +32,9 @@
 * HTML .b-about .message {
 	display: inline;
 	}
+* HTML .b-previews .item {
+	display: inline;
+	}
+	* HTML .b-previews .selected .image {
+		position: relative;
+		}
