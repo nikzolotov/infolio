@@ -619,6 +619,26 @@ SUB {
 				border: 2px solid #1b2029;
 				}
 
+/* Clients */
+.b-clients {
+	margin: 0 -40px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	}
+	.b-clients .item {
+		float: left;
+		width: 180px;
+		margin-bottom: 14px;
+		}
+	.b-clients .item:before {
+		content: none;
+		display: none;
+		}
+		.b-clients .image {
+			display: block;
+			}
 
 /* =Containers
 --------------------------------------- */
