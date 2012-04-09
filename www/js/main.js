@@ -17,4 +17,7 @@
 		
 		contents.update();
 	}
+	
+	/* Подсказки в полях ввода */
+	$('.b-hint-label').hints();
 });

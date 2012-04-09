@@ -38,3 +38,23 @@
 	* HTML .b-previews .selected .image {
 		position: relative;
 		}
+
+/* Form elements */
+.b-wide-input {
+	margin-right: 20px;
+	zoom: 1;
+	}
+	.b-wide-input INPUT,
+	.b-wide-input TEXTAREA,
+	.b-wide-input SELECT {
+		float: left;
+		}
+.b-submit {
+	overflow: visible;
+	}
+
+/* Forms */
+* HTML .b-form {
+	width: 280px;
+	overflow: hidden;
+	}

@@ -174,6 +174,25 @@ SUB {
 	color: #1b2029;
 	}
 
+/* Columns */
+.l-column-260 {
+	float: left;
+	width: 260px;
+	}
+.l-column-270 {
+	float: left;
+	width: 270px;
+	}
+.l-column-280 {
+	float: left;
+	width: 280px;
+	}
+
+/* Holsters */
+.h-column-60 {
+	padding-right: 60px;
+	}
+
 /* =Clearfix and global
 --------------------------------------- */
 
@@ -245,21 +264,38 @@ SUB {
 	.b-icon-current-b B {
 		left: -17px;
 		}
+.b-icon-twitter {
+	width: 32px;
+	height: 32px;
+	margin: -7px 0 0 -40px;
+	}
+	.b-icon-twitter B {
+		top: -17px;
+		}
+.b-icon-facebook {
+	width: 32px;
+	height: 32px;
+	margin: -7px 0 0 -40px;
+	}
+	.b-icon-facebook B {
+		top: -17px;
+		left: -33px;
+		}
 .b-icon-complex {
 	width: 100px;
 	height: 100px;
-	margin: -10px 0 0 -113px;
+	margin: -9px 0 0 -113px;
 	}
 	.b-icon-complex B {
-		top: -49px;
+		top: -50px;
 		}
 .b-icon-weight {
 	width: 100px;
 	height: 100px;
-	margin: -14px 0 0 -115px;
+	margin: -13px 0 0 -115px;
 	}
 	.b-icon-weight B {
-		top: -49px;
+		top: -50px;
 		left: -101px;
 		}
 
@@ -670,7 +706,6 @@ SUB {
 	}
 	.b-clients .item {
 		float: left;
-		width: 180px;
 		margin: 14px 0 0 0;
 		}
 	.b-clients .item:before {
@@ -679,6 +714,78 @@ SUB {
 		}
 		.b-clients .image {
 			display: block;
+			}
+
+/* Small logo */
+.b-small-logo {
+	display: block;
+	margin: -14px 0 20px -5px;
+	}
+
+/* Contacts */
+.b-contacts {
+	margin: 0 0 36px 0;
+	font: italic 20px/24px Georgia, Times, "Times New Roman", sans-serif;
+	}
+	.b-contacts .item {
+		margin-bottom: 14px;
+		}
+	.b-contacts .item:before {
+		content: none;
+		display: none;
+		}
+		.b-contacts .link {
+			color: #383E43;
+			}
+		.b-contacts .link:hover {
+			color: #6D7479;
+			}
+	.b-contacts .phone {
+		margin-left: -2px;
+		}
+	.b-contacts .address {
+		font-size: 16px;
+		line-height: 20px;
+		}
+
+/* Social links */
+.b-social-links {
+	margin: 50px 0 0 0;
+	font-size: 11px;
+	line-height: 14px;
+	color: #999;
+	}
+	.b-social-links .item {
+		margin-bottom: 16px;
+		}
+	.b-social-links .item:before {
+		content: none;
+		display: none;
+		}
+		.b-social-links .link {
+			display: block;
+			width: 100px;
+			padding-left: 35px;
+			text-decoration: none;
+			color: #999;
+			}
+		.b-social-links .link:hover {
+			text-decoration: underline;
+			}
+			.b-social-links .b-icon {
+				margin-top: -2px;
+				}
+	.b-social-links .qr {
+		margin-bottom: 26px;
+		}
+		.b-social-links .image {
+			margin: -5px 5px 0 -5px;
+			vertical-align: top;
+			}
+		.b-social-links .desc {
+			display: inline-block;
+			width: 80px;
+			margin-top: -3px;
 			}
 
 /* =Containers
@@ -698,6 +805,55 @@ SUB {
 
 /* =Form elements
 --------------------------------------- */
+
+/* Form field */
+.b-field {
+	margin-bottom: 14px;
+	}
+
+/* Submit container */
+.b-submit-group {
+	text-align: right;
+	}
+
+/* Label goes to input */
+.b-hint-label {
+    display: none;
+    }
+
+/* Simple text input */
+.b-input,
+.b-textarea {
+	margin: 0;
+	padding: 6px 8px;
+	font-size: 12px;
+	line-height: 15px;
+	font-style: italic;
+	}
+.b-textarea {
+	display: block;
+	}
+
+/* Input with grey hint */
+.b-hint-input {
+    color: #888;
+    }
+
+/* 100% width input with wrapper */
+.b-wide-input INPUT,
+.b-wide-input TEXTAREA {
+	width: 100%;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box !important;
+	}
+
+/* Submit button */
+.b-submit {
+	margin: 0;
+	padding: 5px 14px;
+	}
 
 /* =Forms
 --------------------------------------- */
