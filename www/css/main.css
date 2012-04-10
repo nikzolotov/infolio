@@ -621,10 +621,16 @@ SUB {
 	height: 690px;
 	margin: -32px -40px -34px -40px;
 	}
-	.b-project .illustration {
-		display: block;
+	.b-project .illustrations {
+		position: relative;
+		height: 550px;
 		margin-bottom: 14px;
 		}
+		.b-project .illustration {
+			position: absolute;
+			top: 0;
+			left: 0;
+			}
 	.b-project .intro {
 		float: left;
 		width: 170px;

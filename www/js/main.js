@@ -18,6 +18,19 @@
 		contents.update();
 	}
 	
+	/* Табы услуг */
+	$('#services').tabs({
+		linkSelector: '.b-tabs .link',
+		tabSelector: '.js-tab'
+	});
+	
+	
+	/* Галереи в портфолио */
+	$('.b-project').gallery({
+		linkSelector: '.b-previews .link',
+		imageSelector: '.illustration'
+	});
+	
 	/* Подсказки в полях ввода */
 	$('.b-hint-label').hints();
 });
