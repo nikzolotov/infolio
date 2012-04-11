@@ -28,7 +28,8 @@
 	/* Галереи в портфолио */
 	$('.b-project').gallery({
 		linkSelector: '.b-previews .link',
-		imageSelector: '.illustration'
+		imageClass: 'illustration',
+		loaderHTML: '<span class="b-loading"><img class="image" src="./img/loading.gif" alt="Loading"/></span>'
 	});
 	
 	/* Подсказки в полях ввода */

@@ -299,6 +299,25 @@ SUB {
 		left: -101px;
 		}
 
+/* Loading */
+.b-loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: none;
+	margin: -8px 0 0 -8px;
+	padding: 10px;
+	opacity: .7;
+	background: #000;	
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	}
+	.b-loading .image {
+		display: block;
+		}
+
 /* =Content blocks
 --------------------------------------- */
 
