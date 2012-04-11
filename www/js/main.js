@@ -24,7 +24,6 @@
 		tabSelector: '.js-tab'
 	});
 	
-	
 	/* Галереи в портфолио */
 	$('.b-project').gallery({
 		linkSelector: '.b-previews .link',
@@ -34,4 +33,20 @@
 	
 	/* Подсказки в полях ввода */
 	$('.b-hint-label').hints();
+	
+	/* Форма отправки резюме */
+	var hireLink = $('#hire-link'),
+		hireImage = $('#hire-image'),
+		hireForm = $('#hire-form');
+	
+	hireForm.hide();
+	
+	hireLink.click(function(event){
+		$(this).toggleClass('selected');
+		
+		hireImage.toggle();
+		hireForm.toggle();
+		
+		event.preventDefault();
+	});
 });

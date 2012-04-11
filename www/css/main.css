@@ -188,6 +188,40 @@ SUB {
 	width: 280px;
 	}
 
+/* Modal overlay */
+.l-theater {
+	margin-right: 17px;
+	overflow: hidden;
+	}
+.l-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: auto;
+	background: #1B2029;
+	background: rgba(27, 32, 41, .8);
+	}
+	.l-modal-outer {
+		display: table;
+		width: 100%;
+		height: 100%;
+		}
+		.l-modal-inner {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			}
+			.l-modal-container {
+				display: inline-block;
+				padding: 32px;
+				text-align: left;
+				}
+
 /* Holsters */
 .h-column-60 {
 	padding-right: 60px;
@@ -281,6 +315,15 @@ SUB {
 		top: -17px;
 		left: -33px;
 		}
+.b-icon-close {
+	width: 32px;
+	height: 32px;
+	margin: -7px 0 0 -40px;
+	}
+	.b-icon-close B {
+		top: -17px;
+		left: -66px;
+		}
 .b-icon-complex {
 	width: 100px;
 	height: 100px;
@@ -316,6 +359,18 @@ SUB {
 	}
 	.b-loading .image {
 		display: block;
+		}
+
+/* Close modal button */
+.b-close-modal {
+	position: absolute;
+	top: 12px;
+	right: 14px;
+	}
+	.b-close-modal .b-icon-close {
+		position: relative;
+		display: block;
+		margin: 0;
 		}
 
 /* =Content blocks
@@ -433,6 +488,9 @@ SUB {
 			top: 30px;
 			right: -130px;
 			}
+.l-theater .b-contents-fixed .container {
+	right: -122px;
+	}
 
 /* Tabs */
 .b-tabs {
@@ -813,6 +871,29 @@ SUB {
 			margin-top: -3px;
 			}
 
+/* Hire instructions */
+.b-hire .title {
+	margin-top: 0;
+	}
+.b-hire .desc {
+	margin: 38px 0 28px 0;
+	font: italic 20px/24px Georgia, Times, "Times New Roman", serif;
+	text-align: center;
+	}
+	.b-hire .link {
+		border-bottom: 1px dashed;
+		text-decoration: none;
+		color: #383E43;
+		}
+	.b-hire .selected {
+		border: none;
+		}
+.b-hire .image {
+	display: block;
+	height: 147px;
+	margin: 0 auto 23px auto;
+	}
+
 /* =Containers
 --------------------------------------- */
 
@@ -828,11 +909,32 @@ SUB {
 	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
 	}
 
+/* Modal window itself */
+.b-modal-window {
+	position: relative;
+	max-width: 760px;
+	padding: 40px;
+	background: #FFF;
+	
+	-moz-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	-o-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
+	}
+
+/* Hidden content for modal */
+.b-modal-content {
+	display: none;
+	}
+
 /* =Form elements
 --------------------------------------- */
 
 /* Form field */
 .b-field {
+	margin-bottom: 18px;
+	}
+.b-compact-field {
 	margin-bottom: 14px;
 	}
 
@@ -874,6 +976,12 @@ SUB {
 	box-sizing: border-box !important;
 	}
 
+/* File input */
+.b-file {
+	font-size: 12px;
+	font-style: italic;
+	}
+
 /* Submit button */
 .b-submit {
 	margin: 0;
@@ -882,3 +990,25 @@ SUB {
 
 /* =Forms
 --------------------------------------- */
+
+/* Login */
+.b-login-form {
+	width: 280px;
+	margin: 0 80px;
+	}
+
+/* Hire */
+.b-hire-form {
+	height: 170px;
+	width: 640px;
+	margin: 0 40px 0 80px;
+	overflow: hidden;
+	}
+	.b-hire-form .column {
+		float: left;
+		width: 280px;
+		padding-right: 40px;
+		}
+		.b-hire-form .b-textarea {
+			height: 118px;
+			}

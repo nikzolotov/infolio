@@ -17,6 +17,7 @@
 		<script type="text/javascript" src="./js/jquery.gallery.js"></script>
 		<script type="text/javascript" src="./js/jquery.hints.js"></script>
 		<script type="text/javascript" src="./js/contents.js"></script>
+		<script type="text/javascript" src="./js/modal.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
 		
 		<!--[if (IE 7)|(IE 8)]>
@@ -263,7 +264,7 @@
 					</li>
 				</ul>
 				<div class="b-modal-link">
-					<a class="link" href="?">
+					<a class="link js-modal" href="#login">
 						<span class="text">Вход для клиентов</span>
 					</a>
 				</div>
@@ -286,7 +287,7 @@
 						<div class="h-column-60">
 							<ul class="b-social-links">
 								<li class="item qr">
-									<img class="image" src="./img/qr.png" alt="QR-код"/>
+									<img class="image" src="./img/content/qr.png" alt="QR-код"/>
 									<span class="desc">Добавьте нас в&nbsp;список контактов</span>
 								</li>
 								<li class="item">
@@ -300,19 +301,19 @@
 					</div>
 					<div class="l-column-280">
 						<h3 style="margin: 0 0 26px 0;">Есть интересный проект?</h3>
-						<form class="b-form" action="?" method="post">
+						<form action="?" method="post">
 							<fieldset>
-								<div class="b-field b-wide-input">
+								<div class="b-compact-field b-wide-input">
 									<label class="b-hint-label" for="f-feedback">Суть идеи</label>
 									<textarea id="f-feedback" class="b-textarea" name="feedback" rows="6" cols="50"></textarea>
 								</div>
-								<div class="b-field b-wide-input">
+								<div class="b-compact-field b-wide-input">
 									<label class="b-hint-label" for="f-name">Ваше имя</label>
 									<input id="f-name" class="b-input" type="text" name="name"/>
 								</div>
-								<div class="b-field b-wide-input">
-									<label class="b-hint-label" for="f-email">Электронная почта или телефон</label>
-									<input id="f-email" class="b-input" type="text" name="name"/>
+								<div class="b-compact-field b-wide-input">
+									<label class="b-hint-label" for="f-contacts">Электронная почта или телефон</label>
+									<input id="f-contacts" class="b-input" type="text" name="contacts"/>
 								</div>
 								<div class="b-submit-group">
 									<input class="b-submit" type="submit" value="Отправить"/>
@@ -322,14 +323,75 @@
 					</div>
 				</div>
 				<div class="b-modal-link" style="margin-top: -16px">
-					<a class="link" href="?">
-						<span class="text">Работа у нас</span>
+					<a class="link js-modal" href="#job">
+						<span class="text">Работа у&nbsp;нас</span>
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="l-footer">
 			<div class="b-copyright">&copy;&nbsp;2012&nbsp;ООО &laquo;Студия Инфолио&raquo;</div>
+		</div>
+		<div id="login" class="b-modal-content">
+			<div class="b-modal-window">
+				<h2 class="b-first-title">Вход для&nbsp;клиентов</h2>
+				<form class="b-login-form" action="?" method="post">
+					<fieldset>
+						<div class="b-field b-wide-input">
+							<label class="b-hint-label" for="f-email">Электронная почта</label>
+							<input id="f-email" class="b-input" type="text" name="email"/>
+						</div>
+						<div class="b-field b-wide-input">
+							<label class="b-hint-label" for="f-password">Пароль</label>
+							<input id="f-password" class="b-input" type="password" name="password"/>
+						</div>
+						<div class="b-submit-group">
+							<input class="b-submit" type="submit" value="Войти"/>
+						</div>
+					</fieldset>
+				</form>
+				<a class="b-close-modal" href="?">
+					<b class="b-icon b-icon-close"><b>Закрыть</b></b>
+				</a>
+			</div>
+		</div>
+		<div id="job" class="b-modal-content">
+			<div class="b-modal-window">
+				<div class="b-hire">
+					<h2 class="title">Хотите работать у&nbsp;нас? <br/>Мы всегда рады талантливым сотрудникам!</h2>
+					<p class="desc">Расскажите о&nbsp;себе, на&nbsp;что способны по&nbsp;адресу <a href="mailto:hr@infolio.ru">hr@infolio.ru</a> или&nbsp;воспользуйтесь <a id="hire-link" class="link" href="#hire-form">формой</a>.</p>
+					<img id="hire-image" class="image" src="./img/content/hiring-stages.png" alt="Приём на работу"/>
+					<form id="hire-form" class="b-hire-form" action="?" method="post" enctype="multipart/form-data">
+						<fieldset>
+							<div class="column">
+								<div class="b-field b-wide-input">
+									<label class="b-hint-label" for="f-hire-name">Ваше имя</label>
+									<input id="f-hire-name" class="b-input" type="text" name="hire-name"/>
+								</div>
+								<div class="b-field b-wide-input">
+									<label class="b-hint-label" for="f-hire-contacts">Электронная почта или телефон</label>
+									<input id="f-hire-contacts" class="b-input" type="text" name="hire-contacts"/>
+								</div>
+								<div class="b-field">
+									<input class="b-file" type="file" name="hire-resume"/>
+								</div>
+							</div>
+							<div class="column">
+								<div class="b-field b-wide-input">
+									<label class="b-hint-label" for="f-hire-else">Что-то ещё</label>
+									<textarea id="f-hire-else" class="b-textarea" name="hire-else" rows="6" cols="50"></textarea>
+								</div>
+								<div class="b-submit-group">
+									<input class="b-submit" type="submit" value="Отправить"/>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<a class="b-close-modal" href="?">
+					<b class="b-icon b-icon-close"><b>Закрыть</b></b>
+				</a>
+			</div>
 		</div>
 	</body>
 </html>
