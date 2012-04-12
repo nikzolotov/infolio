@@ -170,4 +170,184 @@
 			</image>
 		</gallery>
 	</project>
+	<project key="pr-inc">
+		<title>Сайт</title>
+		<link>www.pr-inc.ru</link>
+		<year>2008</year>
+		<desc>PR&#160;Inc./DDB предоставляет широкий спектр услуг по&#160;разработке и&#160;реализации стратегий и&#160;программ в&#160;области связей с&#160;общественностью.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Страница услуг</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.png</name>
+					<title>Превью страницы услуг</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.jpg</name>
+					<title>Страница клиентов</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.png</name>
+					<title>Превью страницы клиентов</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="maximov">
+		<title>Флеш-сайт</title>
+		<link>www.max-show.ru</link>
+		<year>2008</year>
+		<desc>Максимов Шоу можно без ложной скромности назвать одним из&#160;лучших шоу-проектов в&#160;Москве.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Страница исполнителя</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.jpg</name>
+					<title>Превью страницы исполнителя</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.png</name>
+					<title>Форум</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.png</name>
+					<title>Превью форума</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="kirill-istomin">
+		<title>Сайт</title>
+		<link>www.kirillistomin.com</link>
+		<year>2008</year>
+		<desc style="margin: 0 -20px 0 -60px;">Кирилл Истомин&#160;&#8212; владелец нью-йоркской фирмы, занимающейся дизайном и&#160;декорированием интерьеров, получил образование в&#160;знаменитой Parsons School of&#160;Design (Нью-Йорк) по&#160;специальности декорирования интерьеров и&#160;начал свою профессиональную карьеру в&#160;ведущей декораторской фирме Нью-Йорка &#171;Pаrish&#8212;Hadley&#187;. Среди клиентов этой старейшей фирмы такие знаменитости как Бруки Астор, Оскар де&#160;ла&#160;Рента, семья Рокфеллеров, Жаклин Кеннеди, по&#160;заказу которой оформлялись интерьеры Белого дома.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Страница декоратора</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью страницы декоратора</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Галерея интерьеров</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.jpg</name>
+					<title>Превью галереи интерьеров</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.jpg</name>
+					<title>Галерея набросков</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.jpg</name>
+					<title>Превью галереи набросков</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="logex">
+		<title>Фирменный стиль и&#160;сайт</title>
+		<link>www.logex.ru</link>
+		<year>2008</year>
+		<desc>Компания &#171;ЛоджекС&#187; вот уже несколько лет успешно осуществляет перевозку крупногабаритных и&#160;тяжеловесных грузов, специализируясь на&#160;транспортировке яхт и&#160;катеров.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Фирменный стиль</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью фирменного стиля</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Главная страница сайта</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.jpg</name>
+					<title>Главная страница сайта</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="armata">
+		<title>Сайт и&#160;логотип</title>
+		<link>www.logex.ru</link>
+		<year>2008</year>
+		<desc>Компания АРМАТА&#160;&#8212; это воплощение самых смелых идей по&#160;применению натуральных материалов в&#160;интерьере.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.png</name>
+					<title>Логотип</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью логотипа</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Главная страница сайта</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.jpg</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
 </projects>

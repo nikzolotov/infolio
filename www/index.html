@@ -1,4 +1,14 @@
-﻿@main[][projects]
+﻿@auto[]
+	$projects[^xdoc::load[$DATA_DIR/projects.xml]]
+	$projects[^projects.transform[$TEMPLATES_DIR/projects.xslt]]
+	
+	$clients[^xdoc::load[$DATA_DIR/clients.xml]]
+	$clients[^clients.transform[$TEMPLATES_DIR/clients.xslt]]
+	
+	$contacts[^xdoc::load[$DATA_DIR/contacts.xml]]
+	$contacts[^contacts.transform[$TEMPLATES_DIR/contacts.xslt]]
+
+@main[]
 	<!DOCTYPE html>
 	<html>
 		<head>
@@ -198,146 +208,10 @@
 					</div>
 				</div>
 				<div id="portfolio" class="b-section">
-					<!--
-					<div id="tab-portfolio-tsm" class="b-project">
-						<div class="illustrations">
-							<img class="illustration" src="./img/projects/tsm/1.jpg" alt=""/>
-						</div>
-						<div class="intro">
-							<h3 class="title">Сайт и&nbsp;рекламная кампания</h3>
-							<div class="meta"><a class="link" href="http://www.tverstroymash.ru/">www.tverstroymash.ru</a><br/> 2008</div>
-						</div>
-						<div class="desc">
-							<p>&laquo;Тверьстроймаш&raquo;&nbsp;&mdash; машиностроительный завод. Занимается разработкой и&nbsp;производством прицепов и&nbsp;полуприцепов различного предназначения, прежде всего полуприцепов-тяжеловозов для перевозки больших и&nbsp;тяжелых грузов.</p>
-						</div>
-						<ul class="b-previews">
-							<li class="item">
-								<a class="link selected" href="./img/projects/tsm/1.jpg">
-									<img class="image" src="./img/projects/tsm/preview-1.png" alt="Превью главной страницы" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-							<li class="item">
-								<a class="link" href="./img/projects/tsm/2.jpg">
-									<img class="image" src="./img/projects/tsm/preview-2.png" alt="Превью индивидуальных проектов" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-							<li class="item">
-								<a class="link" href="./img/projects/tsm/3.jpg">
-									<img class="image" src="./img/projects/tsm/preview-3.png" alt="Превью каталога продукции" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div id="tab-portfolio-tverlife" class="b-project" style="display: none;">
-						<div class="illustrations">
-							<img class="illustration" src="./img/projects/tverlife/1.jpg" alt=""/>
-						</div>
-						<div class="intro">
-							<h3 class="title">Сайт и&nbsp;продвижение</h3>
-							<div class="meta"><a class="link" href="http://www.tverlife.ru/">www.tverlife.ru</a><br/> 2008</div>
-						</div>
-						<div class="desc">
-							<p>Тверская жизнь&nbsp;&mdash; областная общественно-политическая газета на&nbsp;русском языке, издающаяся в&nbsp;Твери.</p>
-						</div>
-						<ul class="b-previews">
-							<li class="item">
-								<a class="link selected" href="./img/projects/tverlife/1.jpg">
-									<img class="image" src="./img/projects/tverlife/preview-1.png" alt="Превью tverlife.ru" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-							<li class="item">
-								<a class="link" href="./img/projects/tverlife/2.jpg">
-									<img class="image" src="./img/projects/tverlife/preview-2.png" alt="Превью tverlife.ru" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-							<li class="item">
-								<a class="link" href="./img/projects/tverlife/3.jpg">
-									<img class="image" src="./img/projects/tverlife/preview-3.png" alt="Превью tverlife.ru" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div id="tab-portfolio-profoptic" class="b-project" style="display: none;">
-						<div class="illustrations">
-							<img class="illustration" src="./img/projects/profoptic/1.jpg" alt=""/>
-						</div>
-						<div class="intro">
-							<h3 class="title">Сайт</h3>
-							<div class="meta"><a class="link" href="http://www.profoptic.ru/">www.profoptic.ru</a><br/> 2008</div>
-						</div>
-						<div class="desc">
-							<p>Интернет-магазин &laquo;PROFOPTIC&raquo; предлагает оптические приборы лучших отечественных и&nbsp;зарубежных производителей.</p>
-						</div>
-						<ul class="b-previews">
-							<li class="item">
-								<a class="link selected" href="./img/projects/profoptic/1.jpg">
-									<img class="image" src="./img/projects/profoptic/preview-1.png" alt="Превью главной страницы" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-							<li class="item">
-								<a class="link" href="./img/projects/profoptic/2.jpg">
-									<img class="image" src="./img/projects/profoptic/preview-2.png" alt="Превью каталога товаров" width="70" height="70"/>
-									<i class="overlay"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<ul class="b-circle-tabs">
-						<li class="item">
-							<a class="link" href="#tab-portfolio-tsm">1</a>
-						</li>
-						<li class="item">
-							<a class="link" href="#tab-portfolio-tverlife">2</a>
-						</li>
-						<li class="item">
-							<a class="link" href="#tab-portfolio-profoptic">3</a>
-						</li>
-					</ul>
-					-->
-					$projects[^xdoc::load[$DATA_DIR/projects.xml]]
-					$projects[^projects.transform[$TEMPLATES_DIR/projects.xslt]]
 					^projects.string[$XSL_OUTPUT]
 				</div>
 				<div id="clients" class="b-section">
-					<ul class="b-clients">
-						<li class="item">
-							<img class="image" src="./img/clients/armata.png" alt="Армата" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/tverlife.png" alt="Tverlife" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/superinform.png" alt="SuperInform" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/strelka.png" alt="&gt; Strelka" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/polihim.png" alt="Полихимгрупп" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/logex.png" alt="Logex" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/ibs.png" alt="IBS" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/mon-company.png" alt="Мон-Компани" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/mts.png" alt="МТС" width="180" height="76"/>
-						</li>
-						<li class="item">
-							<img class="image" src="./img/clients/yota.png" alt="Yota" width="180" height="76"/>
-						</li>
-					</ul>
+					^clients.string[$XSL_OUTPUT]
 					<div class="b-modal-link">
 						<a class="link js-modal" href="#login">
 							<span class="text">Вход для клиентов</span>
@@ -346,34 +220,7 @@
 				</div>
 				<div id="contacts" class="b-section b-last-textblock">
 					<div class="l-wrapper">
-						<div class="l-column-270">
-							<div class="h-column-60">
-								<img class="b-small-logo" src="./img/logo-small.png" alt="Infolio"/>
-								<ul class="b-contacts">
-									<li class="item">
-										<a class="link" href="mailto:hi@infolio.ru">hi@infolio.ru</a>
-									</li>
-									<li class="item phone g-nobr">+7 (4822) 47-65-91</li>
-									<li class="item address">Озерная,  14 корп.&nbsp;1, <br/>Тверь, Россия, 170008</li>
-								</ul>
-							</div>
-						</div>
-						<div class="l-column-260">
-							<div class="h-column-60">
-								<ul class="b-social-links">
-									<li class="item qr">
-										<img class="image" src="./img/content/qr.png" alt="QR-код"/>
-										<span class="desc">Добавьте нас в&nbsp;список контактов</span>
-									</li>
-									<li class="item">
-										<a class="link" href="?"><b class="b-icon b-icon-twitter"><b></b></b> Читайте нас в&nbsp;Twitter</a>
-									</li>
-									<li class="item">
-										<a class="link" href="?"><b class="b-icon b-icon-facebook"><b></b></b> Расскажите о&nbsp;нас в&nbsp;Facebook</a>
-									</li>
-								</ul>
-							</div>
-						</div>
+						^contacts.string[$XSL_OUTPUT]
 						<div class="l-column-280">
 							<h3 style="margin: 0 0 26px 0;">Есть интересный проект?</h3>
 							<form action="?" method="post">

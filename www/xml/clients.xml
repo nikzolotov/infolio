@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clients>
+	<client key="armata">Армата</client>
+	<client key="tverlife">Tverlife</client>
+	<client key="superinform">SuperInform</client>
+	<client key="strelka">&gt; Strelka</client>
+	<client key="polihim">Полихимгрупп</client>
+	<client key="logex">Logex</client>
+	<client key="ibs">IBS</client>
+	<client key="mon-company">Мон-Компани</client>
+	<client key="mts">МТС</client>
+	<client key="yota">Yota</client>
+</clients>

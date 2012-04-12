@@ -27,6 +27,9 @@
 			</div>
 			<div class="desc">
 				<p>
+					<xsl:if test="desc/@style">
+						<xsl:copy-of select="desc/@style"/>
+					</xsl:if>
 					<xsl:value-of select="desc/text()"/>
 				</p>
 			</div>
