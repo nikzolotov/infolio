@@ -1,397 +1,472 @@
-﻿<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-		<title>Infolio</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
-		
-		<!--[if lte IE 8]>
-			<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
-		<![endif]-->
-		<!--[if lte IE 7]>
-			<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
-		<![endif]-->
-		
-		<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
-		<script type="text/javascript" src="./js/jquery.tabs.js"></script>
-		<script type="text/javascript" src="./js/jquery.gallery.js"></script>
-		<script type="text/javascript" src="./js/jquery.hints.js"></script>
-		<script type="text/javascript" src="./js/contents.js"></script>
-		<script type="text/javascript" src="./js/modal.js"></script>
-		<script type="text/javascript" src="./js/main.js"></script>
-		
-		<!--[if (IE 7)|(IE 8)]>
-			<script type="text/javascript" src="./js/cover-background.js"></script>
-		<![endif]-->
-		
-		<link rel="profile" href="http://microformats.org/profile/hcard"/>
-	</head>
-	<body>
-		<div class="l-back-layer">
-			<!--[if (IE 7)|(IE 8)]>
-				<script type="text/javascript">
-					coverBackground.init();
-				</script>
+﻿@main[][projects]
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+			<title>Infolio</title>
+			<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+			
+			<!--[if lte IE 8]>
+				<link rel="stylesheet" type="text/css" href="css/ie8.css"/>
 			<![endif]-->
-		</div>
-		<div class="l-header">
-			<h1 class="b-logo g-png">
-				<img class="image" src="./img/logo.png" alt="Infolio"/>
-			</h1>
-		</div>
-		<div class="l-content">
-			<div id="contents" class="b-contents">
-				<div class="inner">
-					<div class="container">
-						<div class="slider">
+			<!--[if lte IE 7]>
+				<link rel="stylesheet" type="text/css" href="css/ie7.css"/>
+			<![endif]-->
+			
+			<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+			<script type="text/javascript" src="./js/jquery.tabs.js"></script>
+			<script type="text/javascript" src="./js/jquery.gallery.js"></script>
+			<script type="text/javascript" src="./js/jquery.hints.js"></script>
+			<script type="text/javascript" src="./js/contents.js"></script>
+			<script type="text/javascript" src="./js/modal.js"></script>
+			<script type="text/javascript" src="./js/main.js"></script>
+			
+			<!--[if (IE 7)|(IE 8)]>
+				<script type="text/javascript" src="./js/cover-background.js"></script>
+			<![endif]-->
+			
+	    	<link rel="shortcut icon" type="image/x-icon" href="./favicon.png"/>
+		</head>
+		<body>
+			<div class="l-back-layer">
+				<!--[if (IE 7)|(IE 8)]>
+					<script type="text/javascript">
+						coverBackground.init();
+					</script>
+				<![endif]-->
+			</div>
+			<div class="l-header">
+				<h1 class="b-logo g-png">
+					<img class="image" src="./img/logo.png" alt="Infolio"/>
+				</h1>
+			</div>
+			<div class="l-content">
+				<div id="contents" class="b-contents">
+					<div class="inner">
+						<div class="container">
+							<div class="slider">
+								<ul class="list">
+									<li class="item">
+										<span class="text">Делаем</span>
+									</li>
+									<li class="item">
+										<span class="text">Мы</span>
+									</li>
+									<li class="item">
+										<span class="text">Избранное</span>
+									</li>
+									<li class="item">
+										<span class="text">Клиенты</span>
+									</li>
+									<li class="item">
+										<span class="text">Контакты</span>
+									</li>
+								</ul>
+								<b class="b-icon b-icon-current-l"><b></b></b>
+							</div>
 							<ul class="list">
 								<li class="item">
-									<span class="text">Делаем</span>
+									<a href="#services" class="link">Делаем</a>
 								</li>
 								<li class="item">
-									<span class="text">Мы</span>
+									<a href="#about" class="link">Мы</a>
 								</li>
 								<li class="item">
-									<span class="text">Избранное</span>
+									<a href="#portfolio" class="link">Избранное</a>
 								</li>
 								<li class="item">
-									<span class="text">Клиенты</span>
+									<a href="#clients" class="link">Клиенты</a>
 								</li>
 								<li class="item">
-									<span class="text">Контакты</span>
+									<a href="#contacts" class="link">Контакты</a>
 								</li>
 							</ul>
-							<b class="b-icon b-icon-current-l"><b></b></b>
 						</div>
-						<ul class="list">
-							<li class="item">
-								<a href="#services" class="link">Делаем</a>
-							</li>
-							<li class="item">
-								<a href="#about" class="link">Мы</a>
-							</li>
-							<li class="item">
-								<a href="#portfolio" class="link">Избранное</a>
-							</li>
-							<li class="item">
-								<a href="#clients" class="link">Клиенты</a>
-							</li>
-							<li class="item">
-								<a href="#contacts" class="link">Контакты</a>
-							</li>
+					</div>
+				</div>
+				<div id="services" class="b-section">
+					<ul class="b-tabs">
+						<li class="item">
+							<a class="link selected" href="#tab-smart-tv">Smart-TV<b class="b-icon b-icon-current-b"><b></b></b></a>
+						</li>
+						<li class="item">
+							<a class="link" href="#tab-sites">Сайты<b class="b-icon b-icon-current-b"><b></b></b></a>
+						</li>
+						<li class="item">
+							<a class="link" href="#tab-web-services">Веб-сервисы<b class="b-icon b-icon-current-b"><b></b></b></a>
+						</li>
+						<li class="item">
+							<a class="link" href="#tab-mobile-apps">Приложения<b class="b-icon b-icon-current-b"><b></b></b></a>
+						</li>
+						<li class="item last">
+							<a class="link" href="#tab-seo">Интернет-маркетинг<b class="b-icon b-icon-current-b"><b></b></b></a>
+						</li>
+					</ul>
+					<div id="tab-smart-tv" class="js-tab">
+						<div class="b-slide">
+							<div class="image">
+								<img src="./img/services/smart-tv.jpg" alt="Приложение Yota на Smart-TV"/>
+							</div>
+							<div class="desc">
+								<h3 class="title" style="margin-bottom: 22px;">Одними из&nbsp;первых в&nbsp;России мы&nbsp;начали разрабатывать приложения для Smart-TV</h3>
+								<p>Smart-TV&nbsp;&mdash; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&nbsp;телевизорах Samsung, LG, Panasonic и&nbsp;может выступать как одним из&nbsp;способов рекламы, так и&nbsp;приносить реальный доход.</p>
+								<p style="padding-right: 10px;">Мы&nbsp;разработали одни из&nbsp;самых крупных приложений для Smart-TV, Yota Музыка и&nbsp;Yota&nbsp;Play.</p>
+							</div>
+						</div>
+						<ul class="b-brands">
+							<li class="item samsung">Samsung<i class="image"></i></li>
+							<li class="item lg">LG<i class="image"></i></li>
+							<li class="item philips">Philips<i class="image"></i></li>
+							<li class="item panasonic">Panasonic<i class="image"></i></li>
+							<li class="item sony">Sony<i class="image"></i></li>
+							<li class="item wd"><abbr title="Western Digital">WD<i class="image"></i></abbr></li>
+						</ul>
+					</div>
+					<div id="tab-sites" class="js-tab" style="display: none;">
+						<div class="b-slide">
+							<div class="image">
+								<img src="./img/services/sites.jpg" alt="Браузеры"/>
+							</div>
+							<div class="desc">
+								<h3 class="title">Одним из&nbsp;основных направлений нашей деятельности является разработка веб-сервисов и&nbsp;сайтов</h3>
+								<p>Мы&nbsp;создаём решения разных видов и&nbsp;размеров, от&nbsp;промо-сайтов до&nbsp;крупных информационных систем. Также мы&nbsp;разрабатываем приложения для Facebook, Вконтакте.</p>
+							</div>
+						</div>
+						<ul class="b-brands">
+							<li class="item google" style="margin-left: 154px">Google<i class="image"></i></li>
+							<li class="item facebook" style="margin-left: 100px;">Facebook<i class="image"></i></li>
+							<li class="item html5" style="margin-left: 127px;">HTML5<i class="image"></i></li>
+							<li class="item yandex" style="margin-left: 135px;">Yandex<i class="image"></i></li>
+						</ul>
+					</div>
+					<div id="tab-web-services" class="js-tab" style="display: none;">
+						<div class="b-slide">
+							<div class="image">
+								<img src="./img/services/web-services.jpg" alt="Приложение для заказа столиков в баре Стрелка"/>
+							</div>
+							<div class="desc">
+								<h3 class="title">Одним из&nbsp;направлений нашей деятельности является разработка веб-сервисов</h3>
+								<p>Социальные сети всё глубже проникают в&nbsp;сферу бизнеса. Всё больше людей предпочитают общаться и&nbsp;получать информацию на&nbsp;Facebook или ВКонтакте. Своё представительство или приложение в&nbsp;социальной сети позволяет привлечь людей и&nbsp;создать положительный облик бренда. Что, если нужен функционал, который сложно реализовать обычными средствами? Нечто, выходящее из&nbsp;рамок обычного сайта. Тогда вам нужен веб-сервис. Мы&nbsp;разработали приложение для управления баром &gt;strelka.</p>
+							</div>
+						</div>
+						<ul class="b-brands">
+							<li class="item twitter" style="margin-left: 152px">Twitter<i class="image"></i></li>
+							<li class="item facebook" style="margin-left: 190px;">Facebook<i class="image"></i></li>
+							<li class="item vkontakte" style="margin-left: 181px;">Vkontakte<i class="image"></i></li>
+						</ul>
+					</div>
+					<div id="tab-mobile-apps" class="js-tab" style="display: none;">
+						<div class="b-slide">
+							<div class="image">
+								<img src="./img/services/mobile-apps.jpg" alt="Телефоны"/>
+							</div>
+							<div class="desc">
+								<h3 class="title">Мы&nbsp;умеем разрабатывать приложения для мобильных платформ</h3>
+								<p>Мы&nbsp;разрабатываем приложения для мобильных платформ iOS и&nbsp;Android, обеспечивая не&nbsp;только клиентскую, но&nbsp;и&nbsp;серверную часть для онлайн-сервисов и&nbsp;игр.</p>
+							</div>
+						</div>
+						<ul class="b-brands">
+							<li class="item ios" style="margin-left: 156px">iOS<i class="image"></i></li>
+							<li class="item android" style="margin-left: 98px;">Android<i class="image"></i></li>
+						</ul>
+					</div>
+					<div id="tab-seo" class="js-tab" style="display: none;">
+						<div class="b-slide">
+							<div class="image">
+								<img src="./img/services/seo.png" alt="SEO"/>
+							</div>
+							<div class="desc">
+								<h3 class="title">Важно, чтобы ваш сайт легко было найти и&nbsp;чтобы пользователям нравилось находится на&nbsp;вашем сайте</h3>
+								<p>Для этого мы&nbsp;занимаемся поисковой оптимизацией, продвижением в&nbsp;поисковых системах Яндекс и&nbsp;Google, проводим аудиты удобства использования сайта, помогаем улучшить сайт для комфорта пользователей.</p>
+								<p>Но&nbsp;всегда конечным результатом является не&nbsp;сайт или приложение, а&nbsp;именно решение вашей задачи. Под решением мы&nbsp;понимаем комплексный подход и&nbsp;дальнейшее плодотворное сотрудничество.</p>
+							</div>
+						</div>
+						<ul class="b-brands">
+							<li class="item google" style="margin-left: 158px">Samsung<i class="image"></i></li>
+							<li class="item yandex" style="margin-left: 112px;">Yandex<i class="image"></i></li>
+							<li class="item rambler" style="margin-left: 95px;">Rambler<i class="image"></i></li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div id="services" class="b-section">
-				<ul class="b-tabs">
-					<li class="item">
-						<a class="link selected" href="#tab-smart-tv">Smart-TV<b class="b-icon b-icon-current-b"><b></b></b></a>
-					</li>
-					<li class="item">
-						<a class="link" href="#tab-sites">Сайты<b class="b-icon b-icon-current-b"><b></b></b></a>
-					</li>
-					<li class="item">
-						<a class="link" href="#tab-web-services">Веб-сервисы<b class="b-icon b-icon-current-b"><b></b></b></a>
-					</li>
-					<li class="item">
-						<a class="link" href="#tab-mobile-apps">Приложения<b class="b-icon b-icon-current-b"><b></b></b></a>
-					</li>
-					<li class="item last">
-						<a class="link" href="#tab-seo">Интернет-маркетинг<b class="b-icon b-icon-current-b"><b></b></b></a>
-					</li>
-				</ul>
-				<div id="tab-smart-tv" class="js-tab">
-					<div class="b-slide">
-						<div class="image">
-							<img src="./img/services/smart-tv.jpg" alt="Приложение Yota на Smart-TV"/>
+				<div id="about" class="b-section">
+					<div class="b-about">
+						<h2 class="title">Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
+						<div class="desc">
+							<p class="message"><b class="b-icon b-icon-complex"><b></b></b> Мы&nbsp;специализируемся на&nbsp;разработке комплексных интернет-решений. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
+							<p class="message second"><b class="b-icon b-icon-weight"><b></b></b> Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
+						</div>
+					</div>
+				</div>
+				<div id="portfolio" class="b-section">
+					<!--
+					<div id="tab-portfolio-tsm" class="b-project">
+						<div class="illustrations">
+							<img class="illustration" src="./img/projects/tsm/1.jpg" alt=""/>
+						</div>
+						<div class="intro">
+							<h3 class="title">Сайт и&nbsp;рекламная кампания</h3>
+							<div class="meta"><a class="link" href="http://www.tverstroymash.ru/">www.tverstroymash.ru</a><br/> 2008</div>
 						</div>
 						<div class="desc">
-							<h3 class="title" style="margin-bottom: 22px;">Одними из&nbsp;первых в&nbsp;России мы&nbsp;начали разрабатывать приложения для Smart-TV</h3>
-							<p>Smart-TV&nbsp;&mdash; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&nbsp;телевизорах Samsung, LG, Panasonic и&nbsp;может выступать как одним из&nbsp;способов рекламы, так и&nbsp;приносить реальный доход.</p>
-							<p style="padding-right: 10px;">Мы&nbsp;разработали одни из&nbsp;самых крупных приложений для Smart-TV, Yota Музыка и&nbsp;Yota&nbsp;Play.</p>
+							<p>&laquo;Тверьстроймаш&raquo;&nbsp;&mdash; машиностроительный завод. Занимается разработкой и&nbsp;производством прицепов и&nbsp;полуприцепов различного предназначения, прежде всего полуприцепов-тяжеловозов для перевозки больших и&nbsp;тяжелых грузов.</p>
 						</div>
+						<ul class="b-previews">
+							<li class="item">
+								<a class="link selected" href="./img/projects/tsm/1.jpg">
+									<img class="image" src="./img/projects/tsm/preview-1.png" alt="Превью главной страницы" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+							<li class="item">
+								<a class="link" href="./img/projects/tsm/2.jpg">
+									<img class="image" src="./img/projects/tsm/preview-2.png" alt="Превью индивидуальных проектов" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+							<li class="item">
+								<a class="link" href="./img/projects/tsm/3.jpg">
+									<img class="image" src="./img/projects/tsm/preview-3.png" alt="Превью каталога продукции" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<ul class="b-brands">
-						<li class="item samsung">Samsung<i class="image"></i></li>
-						<li class="item lg">LG<i class="image"></i></li>
-						<li class="item philips">Philips<i class="image"></i></li>
-						<li class="item panasonic">Panasonic<i class="image"></i></li>
-						<li class="item sony">Sony<i class="image"></i></li>
-						<li class="item wd"><abbr title="Western Digital">WD<i class="image"></i></abbr></li>
-					</ul>
-				</div>
-				<div id="tab-sites" class="js-tab" style="display: none;">
-					<div class="b-slide">
-						<div class="image">
-							<img src="./img/services/sites.jpg" alt="Браузеры"/>
+					<div id="tab-portfolio-tverlife" class="b-project" style="display: none;">
+						<div class="illustrations">
+							<img class="illustration" src="./img/projects/tverlife/1.jpg" alt=""/>
 						</div>
-						<div class="desc">
-							<h3 class="title">Одним из&nbsp;основных направлений нашей деятельности является разработка веб-сервисов и&nbsp;сайтов</h3>
-							<p>Мы&nbsp;создаём решения разных видов и&nbsp;размеров, от&nbsp;промо-сайтов до&nbsp;крупных информационных систем. Также мы&nbsp;разрабатываем приложения для Facebook, Вконтакте.</p>
-						</div>
-					</div>
-					<ul class="b-brands">
-						<li class="item google" style="margin-left: 154px">Google<i class="image"></i></li>
-						<li class="item facebook" style="margin-left: 100px;">Facebook<i class="image"></i></li>
-						<li class="item html5" style="margin-left: 127px;">HTML5<i class="image"></i></li>
-						<li class="item yandex" style="margin-left: 135px;">Yandex<i class="image"></i></li>
-					</ul>
-				</div>
-				<div id="tab-web-services" class="js-tab" style="display: none;">
-					<div class="b-slide">
-						<div class="image">
-							<img src="./img/services/web-services.jpg" alt="Приложение для заказа столиков в баре Стрелка"/>
+						<div class="intro">
+							<h3 class="title">Сайт и&nbsp;продвижение</h3>
+							<div class="meta"><a class="link" href="http://www.tverlife.ru/">www.tverlife.ru</a><br/> 2008</div>
 						</div>
 						<div class="desc">
-							<h3 class="title">Одним из&nbsp;направлений нашей деятельности является разработка веб-сервисов</h3>
-							<p>Социальные сети всё глубже проникают в&nbsp;сферу бизнеса. Всё больше людей предпочитают общаться и&nbsp;получать информацию на&nbsp;Facebook или ВКонтакте. Своё представительство или приложение в&nbsp;социальной сети позволяет привлечь людей и&nbsp;создать положительный облик бренда. Что, если нужен функционал, который сложно реализовать обычными средствами? Нечто, выходящее из&nbsp;рамок обычного сайта. Тогда вам нужен веб-сервис. Мы&nbsp;разработали приложение для управления баром &gt;strelka.</p>
+							<p>Тверская жизнь&nbsp;&mdash; областная общественно-политическая газета на&nbsp;русском языке, издающаяся в&nbsp;Твери.</p>
 						</div>
+						<ul class="b-previews">
+							<li class="item">
+								<a class="link selected" href="./img/projects/tverlife/1.jpg">
+									<img class="image" src="./img/projects/tverlife/preview-1.png" alt="Превью tverlife.ru" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+							<li class="item">
+								<a class="link" href="./img/projects/tverlife/2.jpg">
+									<img class="image" src="./img/projects/tverlife/preview-2.png" alt="Превью tverlife.ru" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+							<li class="item">
+								<a class="link" href="./img/projects/tverlife/3.jpg">
+									<img class="image" src="./img/projects/tverlife/preview-3.png" alt="Превью tverlife.ru" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<ul class="b-brands">
-						<li class="item twitter" style="margin-left: 152px">Twitter<i class="image"></i></li>
-						<li class="item facebook" style="margin-left: 190px;">Facebook<i class="image"></i></li>
-						<li class="item vkontakte" style="margin-left: 181px;">Vkontakte<i class="image"></i></li>
-					</ul>
-				</div>
-				<div id="tab-mobile-apps" class="js-tab" style="display: none;">
-					<div class="b-slide">
-						<div class="image">
-							<img src="./img/services/mobile-apps.jpg" alt="Телефоны"/>
+					<div id="tab-portfolio-profoptic" class="b-project" style="display: none;">
+						<div class="illustrations">
+							<img class="illustration" src="./img/projects/profoptic/1.jpg" alt=""/>
+						</div>
+						<div class="intro">
+							<h3 class="title">Сайт</h3>
+							<div class="meta"><a class="link" href="http://www.profoptic.ru/">www.profoptic.ru</a><br/> 2008</div>
 						</div>
 						<div class="desc">
-							<h3 class="title">Мы&nbsp;умеем разрабатывать приложения для мобильных платформ</h3>
-							<p>Мы&nbsp;разрабатываем приложения для мобильных платформ iOS и&nbsp;Android, обеспечивая не&nbsp;только клиентскую, но&nbsp;и&nbsp;серверную часть для онлайн-сервисов и&nbsp;игр.</p>
+							<p>Интернет-магазин &laquo;PROFOPTIC&raquo; предлагает оптические приборы лучших отечественных и&nbsp;зарубежных производителей.</p>
 						</div>
+						<ul class="b-previews">
+							<li class="item">
+								<a class="link selected" href="./img/projects/profoptic/1.jpg">
+									<img class="image" src="./img/projects/profoptic/preview-1.png" alt="Превью главной страницы" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+							<li class="item">
+								<a class="link" href="./img/projects/profoptic/2.jpg">
+									<img class="image" src="./img/projects/profoptic/preview-2.png" alt="Превью каталога товаров" width="70" height="70"/>
+									<i class="overlay"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<ul class="b-brands">
-						<li class="item ios" style="margin-left: 156px">iOS<i class="image"></i></li>
-						<li class="item android" style="margin-left: 98px;">Android<i class="image"></i></li>
-					</ul>
-				</div>
-				<div id="tab-seo" class="js-tab" style="display: none;">
-					<div class="b-slide">
-						<div class="image">
-							<img src="./img/services/seo.png" alt="SEO"/>
-						</div>
-						<div class="desc">
-							<h3 class="title">Важно, чтобы ваш сайт легко было найти и&nbsp;чтобы пользователям нравилось находится на&nbsp;вашем сайте</h3>
-							<p>Для этого мы&nbsp;занимаемся поисковой оптимизацией, продвижением в&nbsp;поисковых системах Яндекс и&nbsp;Google, проводим аудиты удобства использования сайта, помогаем улучшить сайт для комфорта пользователей.</p>
-							<p>Но&nbsp;всегда конечным результатом является не&nbsp;сайт или приложение, а&nbsp;именно решение вашей задачи. Под решением мы&nbsp;понимаем комплексный подход и&nbsp;дальнейшее плодотворное сотрудничество.</p>
-						</div>
-					</div>
-					<ul class="b-brands">
-						<li class="item google" style="margin-left: 158px">Samsung<i class="image"></i></li>
-						<li class="item yandex" style="margin-left: 112px;">Yandex<i class="image"></i></li>
-						<li class="item rambler" style="margin-left: 95px;">Rambler<i class="image"></i></li>
-					</ul>
-				</div>
-			</div>
-			<div id="about" class="b-section">
-				<div class="b-about">
-					<h2 class="title">Наш основной продукт&nbsp;&mdash; интернет-решения для бизнеса</h2>
-					<div class="desc">
-						<p class="message"><b class="b-icon b-icon-complex"><b></b></b> Мы&nbsp;специализируемся на&nbsp;разработке комплексных интернет-решений. Наши продукты могут включать в&nbsp;себя проект, дизайн, техническую реализацию, маркетинг и&nbsp;поддержку.</p>
-						<p class="message second"><b class="b-icon b-icon-weight"><b></b></b> Мы&nbsp;работаем с&nbsp;клиентами любых типов и&nbsp;размеров. Создаем идеи. Идеи, которые работают для вашего бизнеса, идеи, которые помогут вам выйти на&nbsp;новый уровень.</p>
-					</div>
-				</div>
-			</div>
-			<div id="portfolio" class="b-section">
-				<div class="b-project">
-					<div class="illustrations">
-						<img class="illustration" src="./img/projects/tsm/1.jpg" alt=""/>
-					</div>
-					<div class="intro">
-						<h3 class="title">Сайт и рекламная кампания</h3>
-						<div class="meta"><a class="link" href="http://www.tverstroymash.ru/">www.tverstroymash.ru</a><br/> 2008</div>
-					</div>
-					<div class="desc">
-						<p>&laquo;Тверьстроймаш&raquo;&nbsp;&mdash; машиностроительный завод. Занимается разработкой и&nbsp;производством прицепов и&nbsp;полуприцепов различного предназначения, прежде всего полуприцепов-тяжеловозов для перевозки больших и&nbsp;тяжелых грузов.</p>
-					</div>
-					<ul class="b-previews">
+					<ul class="b-circle-tabs">
 						<li class="item">
-							<a class="link selected" href="./img/projects/tsm/1.jpg">
-								<img class="image" src="./img/projects/tsm/preview-1.png" alt="Превью главной страницы" width="70" height="70"/>
-								<i class="overlay"></i>
-							</a>
+							<a class="link" href="#tab-portfolio-tsm">1</a>
 						</li>
 						<li class="item">
-							<a class="link" href="./img/projects/tsm/2.jpg">
-								<img class="image" src="./img/projects/tsm/preview-2.png" alt="Превью индивидуальных проектов" width="70" height="70"/>
-								<i class="overlay"></i>
-							</a>
+							<a class="link" href="#tab-portfolio-tverlife">2</a>
 						</li>
 						<li class="item">
-							<a class="link" href="./img/projects/tsm/3.jpg">
-								<img class="image" src="./img/projects/tsm/preview-3.png" alt="Превью каталога продукции" width="70" height="70"/>
-								<i class="overlay"></i>
-							</a>
+							<a class="link" href="#tab-portfolio-profoptic">3</a>
 						</li>
 					</ul>
+					-->
+					$projects[^xdoc::load[$DATA_DIR/projects.xml]]
+					$projects[^projects.transform[$TEMPLATES_DIR/projects.xslt]]
+					^projects.string[$XSL_OUTPUT]
+				</div>
+				<div id="clients" class="b-section">
+					<ul class="b-clients">
+						<li class="item">
+							<img class="image" src="./img/clients/armata.png" alt="Армата" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/tverlife.png" alt="Tverlife" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/superinform.png" alt="SuperInform" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/strelka.png" alt="&gt; Strelka" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/polihim.png" alt="Полихимгрупп" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/logex.png" alt="Logex" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/ibs.png" alt="IBS" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/mon-company.png" alt="Мон-Компани" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/mts.png" alt="МТС" width="180" height="76"/>
+						</li>
+						<li class="item">
+							<img class="image" src="./img/clients/yota.png" alt="Yota" width="180" height="76"/>
+						</li>
+					</ul>
+					<div class="b-modal-link">
+						<a class="link js-modal" href="#login">
+							<span class="text">Вход для клиентов</span>
+						</a>
+					</div>
+				</div>
+				<div id="contacts" class="b-section b-last-textblock">
+					<div class="l-wrapper">
+						<div class="l-column-270">
+							<div class="h-column-60">
+								<img class="b-small-logo" src="./img/logo-small.png" alt="Infolio"/>
+								<ul class="b-contacts">
+									<li class="item">
+										<a class="link" href="mailto:hi@infolio.ru">hi@infolio.ru</a>
+									</li>
+									<li class="item phone g-nobr">+7 (4822) 47-65-91</li>
+									<li class="item address">Озерная,  14 корп.&nbsp;1, <br/>Тверь, Россия, 170008</li>
+								</ul>
+							</div>
+						</div>
+						<div class="l-column-260">
+							<div class="h-column-60">
+								<ul class="b-social-links">
+									<li class="item qr">
+										<img class="image" src="./img/content/qr.png" alt="QR-код"/>
+										<span class="desc">Добавьте нас в&nbsp;список контактов</span>
+									</li>
+									<li class="item">
+										<a class="link" href="?"><b class="b-icon b-icon-twitter"><b></b></b> Читайте нас в&nbsp;Twitter</a>
+									</li>
+									<li class="item">
+										<a class="link" href="?"><b class="b-icon b-icon-facebook"><b></b></b> Расскажите о&nbsp;нас в&nbsp;Facebook</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="l-column-280">
+							<h3 style="margin: 0 0 26px 0;">Есть интересный проект?</h3>
+							<form action="?" method="post">
+								<fieldset>
+									<div class="b-compact-field b-wide-input">
+										<label class="b-hint-label" for="f-feedback">Суть идеи</label>
+										<textarea id="f-feedback" class="b-textarea" name="feedback" rows="6" cols="50"></textarea>
+									</div>
+									<div class="b-compact-field b-wide-input">
+										<label class="b-hint-label" for="f-name">Ваше имя</label>
+										<input id="f-name" class="b-input" type="text" name="name"/>
+									</div>
+									<div class="b-compact-field b-wide-input">
+										<label class="b-hint-label" for="f-contacts">Электронная почта или телефон</label>
+										<input id="f-contacts" class="b-input" type="text" name="contacts"/>
+									</div>
+									<div class="b-submit-group">
+										<input class="b-submit" type="submit" value="Отправить"/>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="b-modal-link" style="margin-top: -16px">
+						<a class="link js-modal" href="#job">
+							<span class="text">Работа у&nbsp;нас</span>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div id="clients" class="b-section">
-				<ul class="b-clients">
-					<li class="item">
-						<img class="image" src="./img/clients/armata.png" alt="Армата" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/tverlife.png" alt="Tverlife" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/superinform.png" alt="SuperInform" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/strelka.png" alt="&gt; Strelka" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/polihim.png" alt="Полихимгрупп" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/logex.png" alt="Logex" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/ibs.png" alt="IBS" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/mon-company.png" alt="Мон-Компани" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/mts.png" alt="МТС" width="180" height="76"/>
-					</li>
-					<li class="item">
-						<img class="image" src="./img/clients/yota.png" alt="Yota" width="180" height="76"/>
-					</li>
-				</ul>
-				<div class="b-modal-link">
-					<a class="link js-modal" href="#login">
-						<span class="text">Вход для клиентов</span>
+			<div class="l-footer">
+				<div class="b-copyright">&copy;&nbsp;2012&nbsp;ООО &laquo;Студия Инфолио&raquo;</div>
+			</div>
+			<div id="login" class="b-modal-content">
+				<div class="b-modal-window">
+					<h2 class="b-first-title">Вход для&nbsp;клиентов</h2>
+					<form class="b-login-form" action="?" method="post">
+						<fieldset>
+							<div class="b-field b-wide-input">
+								<label class="b-hint-label" for="f-email">Электронная почта</label>
+								<input id="f-email" class="b-input" type="text" name="email"/>
+							</div>
+							<div class="b-field b-wide-input">
+								<label class="b-hint-label" for="f-password">Пароль</label>
+								<input id="f-password" class="b-input" type="password" name="password"/>
+							</div>
+							<div class="b-submit-group">
+								<input class="b-submit" type="submit" value="Войти"/>
+							</div>
+						</fieldset>
+					</form>
+					<a class="b-close-modal" href="?">
+						<b class="b-icon b-icon-close"><b>Закрыть</b></b>
 					</a>
 				</div>
 			</div>
-			<div id="contacts" class="b-section b-last-textblock">
-				<div class="l-wrapper">
-					<div class="l-column-270">
-						<div class="h-column-60">
-							<img class="b-small-logo" src="./img/logo-small.png" alt="Infolio"/>
-							<ul class="b-contacts">
-								<li class="item">
-									<a class="link" href="mailto:hi@infolio.ru">hi@infolio.ru</a>
-								</li>
-								<li class="item phone g-nobr">+7 (4822) 47-65-91</li>
-								<li class="item address">Озерная,  14 корп.&nbsp;1, <br/>Тверь, Россия, 170008</li>
-							</ul>
-						</div>
-					</div>
-					<div class="l-column-260">
-						<div class="h-column-60">
-							<ul class="b-social-links">
-								<li class="item qr">
-									<img class="image" src="./img/content/qr.png" alt="QR-код"/>
-									<span class="desc">Добавьте нас в&nbsp;список контактов</span>
-								</li>
-								<li class="item">
-									<a class="link" href="?"><b class="b-icon b-icon-twitter"><b></b></b> Читайте нас в&nbsp;Twitter</a>
-								</li>
-								<li class="item">
-									<a class="link" href="?"><b class="b-icon b-icon-facebook"><b></b></b> Расскажите о&nbsp;нас в&nbsp;Facebook</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="l-column-280">
-						<h3 style="margin: 0 0 26px 0;">Есть интересный проект?</h3>
-						<form action="?" method="post">
+			<div id="job" class="b-modal-content">
+				<div class="b-modal-window">
+					<div class="b-hire">
+						<h2 class="title">Хотите работать у&nbsp;нас? <br/>Мы всегда рады талантливым сотрудникам!</h2>
+						<p class="desc">Расскажите о&nbsp;себе, на&nbsp;что способны по&nbsp;адресу <a href="mailto:hr@infolio.ru">hr@infolio.ru</a> или&nbsp;воспользуйтесь <a id="hire-link" class="link" href="#hire-form">формой</a>.</p>
+						<img id="hire-image" class="image" src="./img/content/hiring-stages.png" alt="Приём на работу"/>
+						<form id="hire-form" class="b-hire-form" action="?" method="post" enctype="multipart/form-data">
 							<fieldset>
-								<div class="b-compact-field b-wide-input">
-									<label class="b-hint-label" for="f-feedback">Суть идеи</label>
-									<textarea id="f-feedback" class="b-textarea" name="feedback" rows="6" cols="50"></textarea>
+								<div class="column">
+									<div class="b-field b-wide-input">
+										<label class="b-hint-label" for="f-hire-name">Ваше имя</label>
+										<input id="f-hire-name" class="b-input" type="text" name="hire-name"/>
+									</div>
+									<div class="b-field b-wide-input">
+										<label class="b-hint-label" for="f-hire-contacts">Электронная почта или телефон</label>
+										<input id="f-hire-contacts" class="b-input" type="text" name="hire-contacts"/>
+									</div>
+									<div class="b-field">
+										<input class="b-file" type="file" name="hire-resume"/>
+									</div>
 								</div>
-								<div class="b-compact-field b-wide-input">
-									<label class="b-hint-label" for="f-name">Ваше имя</label>
-									<input id="f-name" class="b-input" type="text" name="name"/>
-								</div>
-								<div class="b-compact-field b-wide-input">
-									<label class="b-hint-label" for="f-contacts">Электронная почта или телефон</label>
-									<input id="f-contacts" class="b-input" type="text" name="contacts"/>
-								</div>
-								<div class="b-submit-group">
-									<input class="b-submit" type="submit" value="Отправить"/>
+								<div class="column">
+									<div class="b-field b-wide-input">
+										<label class="b-hint-label" for="f-hire-else">Что-то ещё</label>
+										<textarea id="f-hire-else" class="b-textarea" name="hire-else" rows="6" cols="50"></textarea>
+									</div>
+									<div class="b-submit-group">
+										<input class="b-submit" type="submit" value="Отправить"/>
+									</div>
 								</div>
 							</fieldset>
 						</form>
 					</div>
-				</div>
-				<div class="b-modal-link" style="margin-top: -16px">
-					<a class="link js-modal" href="#job">
-						<span class="text">Работа у&nbsp;нас</span>
+					<a class="b-close-modal" href="?">
+						<b class="b-icon b-icon-close"><b>Закрыть</b></b>
 					</a>
 				</div>
 			</div>
-		</div>
-		<div class="l-footer">
-			<div class="b-copyright">&copy;&nbsp;2012&nbsp;ООО &laquo;Студия Инфолио&raquo;</div>
-		</div>
-		<div id="login" class="b-modal-content">
-			<div class="b-modal-window">
-				<h2 class="b-first-title">Вход для&nbsp;клиентов</h2>
-				<form class="b-login-form" action="?" method="post">
-					<fieldset>
-						<div class="b-field b-wide-input">
-							<label class="b-hint-label" for="f-email">Электронная почта</label>
-							<input id="f-email" class="b-input" type="text" name="email"/>
-						</div>
-						<div class="b-field b-wide-input">
-							<label class="b-hint-label" for="f-password">Пароль</label>
-							<input id="f-password" class="b-input" type="password" name="password"/>
-						</div>
-						<div class="b-submit-group">
-							<input class="b-submit" type="submit" value="Войти"/>
-						</div>
-					</fieldset>
-				</form>
-				<a class="b-close-modal" href="?">
-					<b class="b-icon b-icon-close"><b>Закрыть</b></b>
-				</a>
-			</div>
-		</div>
-		<div id="job" class="b-modal-content">
-			<div class="b-modal-window">
-				<div class="b-hire">
-					<h2 class="title">Хотите работать у&nbsp;нас? <br/>Мы всегда рады талантливым сотрудникам!</h2>
-					<p class="desc">Расскажите о&nbsp;себе, на&nbsp;что способны по&nbsp;адресу <a href="mailto:hr@infolio.ru">hr@infolio.ru</a> или&nbsp;воспользуйтесь <a id="hire-link" class="link" href="#hire-form">формой</a>.</p>
-					<img id="hire-image" class="image" src="./img/content/hiring-stages.png" alt="Приём на работу"/>
-					<form id="hire-form" class="b-hire-form" action="?" method="post" enctype="multipart/form-data">
-						<fieldset>
-							<div class="column">
-								<div class="b-field b-wide-input">
-									<label class="b-hint-label" for="f-hire-name">Ваше имя</label>
-									<input id="f-hire-name" class="b-input" type="text" name="hire-name"/>
-								</div>
-								<div class="b-field b-wide-input">
-									<label class="b-hint-label" for="f-hire-contacts">Электронная почта или телефон</label>
-									<input id="f-hire-contacts" class="b-input" type="text" name="hire-contacts"/>
-								</div>
-								<div class="b-field">
-									<input class="b-file" type="file" name="hire-resume"/>
-								</div>
-							</div>
-							<div class="column">
-								<div class="b-field b-wide-input">
-									<label class="b-hint-label" for="f-hire-else">Что-то ещё</label>
-									<textarea id="f-hire-else" class="b-textarea" name="hire-else" rows="6" cols="50"></textarea>
-								</div>
-								<div class="b-submit-group">
-									<input class="b-submit" type="submit" value="Отправить"/>
-								</div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-				<a class="b-close-modal" href="?">
-					<b class="b-icon b-icon-close"><b>Закрыть</b></b>
-				</a>
-			</div>
-		</div>
-	</body>
-</html>
+		</body>
+	</html>

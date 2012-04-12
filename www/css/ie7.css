@@ -26,6 +26,10 @@
 	}
 
 /* Content blocks */
+.b-circle-tabs .item {
+	display: inline;
+	zoom: 1;
+	}
 * HTML .b-brands .item {
 	display: inline;
 	}

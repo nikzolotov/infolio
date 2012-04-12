@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projects>
+	<project key="tsm">
+		<title>Сайт и&#160;рекламная кампания</title>
+		<link>www.tverstroymash.ru</link>
+		<year>2008</year>
+		<desc>&#171;Тверьстроймаш&#187;&#160;&#8212; машиностроительный завод. Занимается разработкой и&#160;производством прицепов и&#160;полуприцепов различного предназначения, прежде всего полуприцепов-тяжеловозов для перевозки больших и&#160;тяжелых грузов.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Индивидуальные проекты</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.png</name>
+					<title>Превью индивидуальных проектов</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.jpg</name>
+					<title>Каталог продукции</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.png</name>
+					<title>Превью каталога продукции</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="tverlife">
+		<title>Сайт и&#160;продвижение</title>
+		<link>www.tverlife.ru</link>
+		<year>2008</year>
+		<desc>Тверская жизнь&#160;&#8212; областная общественно-политическая газета на&#160;русском языке, издающаяся в&#160;Твери.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Tve</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Новости</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.png</name>
+					<title>rlife</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.jpg</name>
+					<title>Блоги</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.png</name>
+					<title>.ru</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="profoptic">
+		<title>Сайт</title>
+		<link>www.profoptic.ru</link>
+		<year>2008</year>
+		<desc>Интернет-магазин &#171;PROFOPTIC&#187; предлагает оптические приборы лучших отечественных и&#160;зарубежных производителей.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Каталог продукции</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.png</name>
+					<title>Превью каталога продукции</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="arbalet-gold">
+		<title>Сайт</title>
+		<link>www.arbalet-gold.ru</link>
+		<year>2008</year>
+		<desc>Фирма, организованная спортсменами-лучниками и&#160;специалистами по&#160;стрелковому оружию, которые не&#160;один год проработали в&#160;фирмах, торгующих спортивных снаряжением и&#160;товарами для охоты.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.jpg</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Каталог продукции</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.jpg</name>
+					<title>Превью каталога продукции</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+	<project key="trendless">
+		<title>Сайт</title>
+		<link>www.trendless.ru</link>
+		<year>2008</year>
+		<desc>Trendless&#160;&#8212; интернет-магазин немассовой молодежной одежды от&#160;восходящих дизайнеров, магазин вещей, которые не&#160;рекламируется в&#160;глянцевых журналах, но&#160;выражают модные тенденции.</desc>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>1.jpg</name>
+					<title>Главная страница</title>
+				</fullsize>
+				<preview>
+					<name>preview-1.png</name>
+					<title>Превью главной страницы</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>2.jpg</name>
+					<title>Страница футболки</title>
+				</fullsize>
+				<preview>
+					<name>preview-2.png</name>
+					<title>Превью страницы футболки</title>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>3.jpg</name>
+					<title>Страница о доставке и оплате</title>
+				</fullsize>
+				<preview>
+					<name>preview-3.png</name>
+					<title>Превью страницы о доставке</title>
+				</preview>
+			</image>
+		</gallery>
+	</project>
+</projects>

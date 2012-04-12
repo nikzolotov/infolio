@@ -24,6 +24,12 @@
 		tabSelector: '.js-tab'
 	});
 	
+	/* Табы проектов в портфолио */
+	$('#portfolio').tabs({
+		linkSelector: '.b-circle-tabs .link',
+		tabSelector: '.b-project'
+	});
+	
 	/* Галереи в портфолио */
 	$('.b-project').gallery({
 		linkSelector: '.b-previews .link',
