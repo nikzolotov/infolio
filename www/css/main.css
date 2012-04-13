@@ -232,7 +232,7 @@ SUB {
 
 /* Clearfix */
 .l-wrapper:after,
-.b-tabs:after {
+.b-tab-links:after {
 	content: '.';
 	display: block;
 	height: 0;
@@ -493,22 +493,22 @@ SUB {
 	right: -122px;
 	}
 
-/* Tabs */
-.b-tabs {
+/* Tab links */
+.b-tab-links {
 	margin: -32px -40px 40px -40px;
 	font-size: 12px;
 	line-height: 14px;
 	}
-	.b-tabs .item {
+	.b-tab-links .item {
 		float: left;
 		width: 179px;
 		margin: 0 1px 0 0;
 		}
-	.b-tabs .item:before {
+	.b-tab-links .item:before {
 		content: none;
 		display: none;
 		}
-		.b-tabs .link {
+		.b-tab-links .link {
 			position: relative;
 			display: block;
 			padding: 13px 18px;
@@ -517,29 +517,29 @@ SUB {
 			text-align: center;
 			color: #FFF;
 			}
-			.b-tabs .b-icon-current-b {
+			.b-tab-links .b-icon-current-b {
 				display: none;
 				}
-		.b-tabs .link:hover {
+		.b-tab-links .link:hover {
 			background: #668189;
 			}
-		.b-tabs .selected,
-		.b-tabs .selected:hover {
+		.b-tab-links .selected,
+		.b-tab-links .selected:hover {
 			cursor: default;
 			background: #1B2029;
 			}
-			.b-tabs .selected .b-icon-current-b {
+			.b-tab-links .selected .b-icon-current-b {
 				display: block;
 				}
-	.b-tabs .last {
+	.b-tab-links .last {
 		width: 180px;
 		margin-right: 0;
 		}
 
 /* Numbered tabs */
-.b-circle-tabs {
+.b-circle-tab-links {
 	position: absolute;
-	top: -50px;
+	top: -60px;
 	left: 0;
 	width: 100%;
 	margin: 0;
@@ -547,15 +547,15 @@ SUB {
 	font-size: 12px;
 	line-height: 15px;
 	}
-	.b-circle-tabs .item {
+	.b-circle-tab-links .item {
 		display: inline-block;
 		margin: 0 2px;
 		}
-	.b-circle-tabs .item:before {
+	.b-circle-tab-links .item:before {
 		content: none;
 		display: none;
 		}
-		.b-circle-tabs .link {
+		.b-circle-tab-links .link {
 			display: block;
 			width: 39px;
 			height: 15px;
@@ -573,7 +573,7 @@ SUB {
 			-o-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, .35), 2px 3px 10px 0 rgba(0, 0, 0, .5);
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, .35), 2px 3px 10px 0 rgba(0, 0, 0, .5);
 			}
-		.b-circle-tabs .link:hover {
+		.b-circle-tab-links .link:hover {
 			background: #B8D1D4;
 			
 			
@@ -582,8 +582,8 @@ SUB {
 			-o-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, .25), 2px 3px 10px 0 rgba(0, 0, 0, .5);
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, .25), 2px 3px 10px 0 rgba(0, 0, 0, .5);
 			}
-		.b-circle-tabs .selected,
-		.b-circle-tabs .selected:hover {
+		.b-circle-tab-links .selected,
+		.b-circle-tab-links .selected:hover {
 			cursor: default;
 			background: #121E2B;
 			color: #FFF;
@@ -749,8 +749,9 @@ SUB {
 
 /* Project */
 .b-project {
+	width: 900px !important;
 	height: 690px;
-	margin: -32px -40px -34px -40px;
+	padding: 0 !important;
 	}
 	.b-project .illustrations {
 		position: relative;
@@ -963,6 +964,27 @@ SUB {
 	-o-box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
 	box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, .5);
 	}
+.b-section-separated {
+	margin-top: 140px;
+	}
+
+/* Horizontal tabs */
+.b-tabs {
+	position: relative;
+	width: 900px;
+	margin: -32px -40px -34px -40px;
+	overflow: hidden;
+	}
+	.b-tabs-inner {
+		position: relative;
+		width: 20000px;
+		overflow: hidden;
+		}
+		.b-tab {
+			float: left;
+			width: 820px;
+			padding: 32px 40px 34px 40px;
+			}
 
 /* Modal window itself */
 .b-modal-window {

@@ -1,6 +1,7 @@
 ﻿/* hasLayout */
 .l-wrapper,
 * HTML .b-contents .item,
+.b-tab-links,
 * HTML .b-slide,
 * HTML .b-brands,
 .b-about .desc,
@@ -26,7 +27,7 @@
 	}
 
 /* Content blocks */
-.b-circle-tabs .item {
+.b-circle-tab-links .item {
 	display: inline;
 	zoom: 1;
 	}
@@ -58,7 +59,7 @@
 	}
 
 /* Forms */
-* HTML .b-form {
+* HTML .b-feedback-form {
 	width: 280px;
 	overflow: hidden;
 	}

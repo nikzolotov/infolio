@@ -2,14 +2,21 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	
 	<xsl:template match="projects">
-		<xsl:apply-templates select="project"/>
-		<ul class="b-circle-tabs">
+		<div class="b-tabs">
+			<div class="b-tabs-inner">
+				<xsl:apply-templates select="project"/>
+			</div>
+		</div>
+		<ul class="b-circle-tab-links">
 			<xsl:apply-templates select="project" mode="navigation"/>
 		</ul>
 	</xsl:template>
 	
 	<xsl:template match="project">
-		<div id="tab-portfolio-{@key}" class="b-project">
+		<div id="tab-portfolio-{@key}" class="b-tab b-project">
+			<xsl:if test="position() &gt; 1">
+				<xsl:attribute name="style">display: none;</xsl:attribute>
+			</xsl:if>
 			<div class="illustrations">
 				<xsl:apply-templates select="gallery/image[1]" mode="main"/>
 			</div>

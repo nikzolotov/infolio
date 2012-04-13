@@ -8,6 +8,10 @@
 			linkSelector: '',
 			tabSelector: '',
 			selectedClass: 'selected',
+			animation: {
+				type: 'horizontal',
+				time: 300
+			},
 			onSwitchTab: null
 		};
 		
@@ -18,13 +22,26 @@
 			
 			var tabsContainer = $(this),
 				links = $(SETTINGS.linkSelector, tabsContainer),
-				tabs = $(SETTINGS.tabSelector, tabsContainer);
+				tabs = $(SETTINGS.tabSelector, tabsContainer),
+				tabsParent = tabs.eq(0).parent();
 			
 			initTabs();
 			assignEvents();
 			
 			function initTabs(){
-				tabs.filter(':not(:first)').hide();
+				if( SETTINGS.animation.type == 'horizontal' ){
+					
+					// Не знаю, как вернуть на место элемент, если его показал браузер по #id
+					// Никакие css-свойства не действуют. Поэтому пока так —
+					// элементы с id изначально спрятаны, и почти сразу мы их показываем.
+					setTimeout(function(){
+						tabs.show();
+					}, 500);
+				}
+				else {
+					tabs.filter(':not(:first)').hide();
+				}
+				
 				links.eq(0).addClass(SETTINGS.selectedClass);
 			}
 			
@@ -59,8 +76,15 @@
 				var linkHrefTarget = link.attr('href').substr(1),
 					targetTab = tabs.filter(function(){ return $(this).attr('id') == linkHrefTarget; });
 				
-				tabs.hide();
-				targetTab.show();
+				if( SETTINGS.animation.type == 'horizontal' ){
+					tabsParent.animate({
+						marginLeft: - targetTab.position().left
+					}, SETTINGS.animation.time);
+				}
+				else{
+					tabs.hide();
+					targetTab.show();
+				}
 				
 				links.removeClass(SETTINGS.selectedClass);
 				link.addClass(SETTINGS.selectedClass);

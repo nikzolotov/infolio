@@ -85,7 +85,8 @@ var contents = (function(){
 			_sectionsAreas.push({
 				height: 0,
 				begin: 0,
-				end: 0
+				end: 0,
+				topMargin: 0
 			});
 		}
 	}
@@ -95,6 +96,12 @@ var contents = (function(){
 			_sectionsAreas[i].height = _sections.eq(i).height() + parseInt(_sections.eq(i).css("padding-top"), 10) + parseInt(_sections.eq(i).css("padding-bottom"), 10);
 			_sectionsAreas[i].begin = (i == 0) ? 0 : _sections.eq(i).offset().top - SETTINGS.sectionMargin;
 			_sectionsAreas[i].end = (i == _sectionsAreas.length - 1) ? _document.height() : _sections.eq(i).offset().top + _sectionsAreas[i].height + SETTINGS.sectionMargin;
+			_sectionsAreas[i].topMargin = parseInt(_sections.eq(i).css("margin-top"), 10);
+			
+			// Полухардкод для портфолио
+			if( _sectionsAreas[i].topMargin > SETTINGS.sectionMargin ){
+				_sectionsAreas[i].begin -= _sectionsAreas[i].topMargin - SETTINGS.sectionMargin * 2;
+			}
 		}
 	}
 	
@@ -116,8 +123,13 @@ var contents = (function(){
 	
 	function scrollToSection( sectionName ){
 		var targetSection = _sections.filter(function(){ return $(this).attr('id') == sectionName; }),
-			targetSectionHeight = targetSection.height() + parseInt(targetSection.css("padding-top"), 10) + parseInt(targetSection.css("padding-bottom"), 10),
+			targetSectionArea = _sectionsAreas[_sections.index(targetSection)],
 			scrollTopToTarget = targetSection.offset().top - SETTINGS.fixedTopPosition;
+		
+		// Полухардкод для портфолио
+		if( targetSectionArea.topMargin > 0 ){
+			scrollTopToTarget -= targetSectionArea.topMargin - SETTINGS.sectionMargin * 2 - 5;
+		}
 		
 		$('html, body').animate({
 			scrollTop: scrollTopToTarget

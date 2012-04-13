@@ -38,10 +38,11 @@
 					var thisLink = $(this),
 						thisIndex = links.index(thisLink),
 						thisHref = thisLink.attr('href'),
+						thisTitle = thisLink.attr('title'),
 						targetImage = images[thisIndex];
 					
 					if( typeof targetImage === 'undefined' ){
-						images[thisIndex] = $('<img class="' + SETTINGS.imageClass + '" alt=""/>').hide().insertAfter(images[prevImageNumber(thisIndex)]);
+						images[thisIndex] = $('<img class="' + SETTINGS.imageClass + '" alt="' + thisTitle + '"/>').hide().insertAfter(images[prevImageNumber(thisIndex)]);
 						
 						loaderTimeout = setTimeout(function(){
 							loader.fadeIn(SETTINGS.selectedClass);

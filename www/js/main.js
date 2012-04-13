@@ -20,14 +20,14 @@
 	
 	/* Табы услуг */
 	$('#services').tabs({
-		linkSelector: '.b-tabs .link',
-		tabSelector: '.js-tab'
+		linkSelector: '.b-tab-links .link',
+		tabSelector: '.b-tab'
 	});
 	
 	/* Табы проектов в портфолио */
 	$('#portfolio').tabs({
-		linkSelector: '.b-circle-tabs .link',
-		tabSelector: '.b-project'
+		linkSelector: '.b-circle-tab-links .link',
+		tabSelector: '.b-tab'
 	});
 	
 	/* Галереи в портфолио */
