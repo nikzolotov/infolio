@@ -1,0 +1,48 @@
+﻿@main[]
+	^sendEmail[
+		$.feedback[$name]
+		$.name[$name]
+		$.contacts[$contacts]
+	]
+	
+	<div class="b-message">
+		<p class="title">Отправлено.</p>
+		<input id="feedback-close" class="b-submit" type="submit" value="Ok"/>
+	</div>
+	
+	$response:content-type[text/html^;charset=utf-8]
+
+@GET_feedback[]
+	$result[^if($form:feedback ne "Суть идеи"){$form:feedback}]
+
+@GET_name[]
+	$result[^if($form:name ne "Ваше имя"){$form:name}]
+
+@GET_contacts[]
+	$result[^if($form:contacts ne "Электронная почта или телефон"){$form:contacts}]
+
+@sendEmail[_params]
+	^if(def $_params && $_params is hash){
+		^try{
+			^mail:send[
+				$.from[$MAIN:SYSTEM_EMAIL]
+				$.to[$MAIN:MANAGERS_EMAIL]
+				$.subject[Сайт студии: предложение сотрудничества]
+				$.html{
+					<p>Привет, сообщение из формы обратной связи:</p>
+					^if(def $_params.feedback){
+						<p><strong>Суть идеи</strong>: $_params.feedback</p>
+					}
+					^if(def $_params.name){
+						<p><strong>Имя</strong>: $_params.name</p>
+					}
+					^if(def $_params.contacts){
+						<p><strong>Контакты</strong>: $_params.contacts</p>
+					}
+				}
+				$.text[]
+			]
+		}{
+			$exception.handled(true)
+		}
+	}

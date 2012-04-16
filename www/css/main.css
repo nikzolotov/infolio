@@ -1089,10 +1089,21 @@ SUB {
 	}
 
 /* Form success */
-.b-success {
-	margin-bottom: 24px;
-	font: italic 20px/24px Georgia, Times, "Times New Roman", serif;
+.b-message {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -40px;
+	text-align: center;
 	}
+	.b-message .title {
+		margin-bottom: 24px;
+		font: italic 20px/24px Georgia, Times, "Times New Roman", serif;
+		}
+	.b-message .b-submit {
+		width: 124px;
+		}
 
 /* =Forms
 --------------------------------------- */
@@ -1101,6 +1112,11 @@ SUB {
 .b-login-form {
 	width: 280px;
 	margin: 0 80px;
+	}
+
+/* Feedback */
+.b-feedback-form .title {
+	margin: 0 0 26px 0;
 	}
 
 /* Hire */
@@ -1118,12 +1134,3 @@ SUB {
 		.b-hire-form .b-textarea {
 			height: 118px;
 			}
-.b-hire-message {
-	width: 760px;
-	height: 238px;
-	padding-top: 148px;
-	text-align: center;
-	}
-	.b-hire-message .b-submit {
-		width: 124px;
-		}

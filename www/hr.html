@@ -20,8 +20,8 @@
 		^resume.save[binary;$MAIN:UPLOAD_DIR/hr/$resumeMonth/${resumeName}.$resumeExt]
 	}
 	
-	<div class="b-hire-message">
-		<p class="b-success">Отправлено.</p>
+	<div class="b-message">
+		<p class="title">Отправлено.</p>
 		<input id="hire-close" class="b-submit" type="submit" value="Ok"/>
 	</div>
 	
@@ -42,7 +42,7 @@
 			^mail:send[
 				$.from[$MAIN:SYSTEM_EMAIL]
 				$.to[$MAIN:MANAGERS_EMAIL]
-				$.subject[Отклик на вакансию]
+				$.subject[Сайт студии: отклик на вакансию]
 				$.html{
 					<p>Привет, у нас новый соискатель:</p>
 					^if(def $_params.name){

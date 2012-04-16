@@ -75,12 +75,53 @@
 		event.preventDefault();
 	});
 	
+	/* Форма обратной связи */
+	var feedbackContainer = $('#feedback'),
+		feedbackForm = $('#feedback-form'),
+		feedbackInputs = $('input, textarea', feedbackForm),
+		feedbackCloseButton = $('#feedback-close'),
+		feedbackFormLoader = $(loaderHTMLTemplate);
+	
+	feedbackFormLoader.appendTo(feedbackContainer);
+	
+	feedbackForm.submit(function(event){
+		feedbackFormLoader.show();
+		
+		$.ajax({
+			type: 'post',
+			url: '/feedback.html',
+			data: feedbackForm.serializeArray(),
+			dataType: 'html',
+			success: function(response){
+				feedbackFormLoader.hide();
+				
+				if( typeof response === 'string' ){
+					feedbackForm.css('visibility', 'hidden').after(response);
+				}
+			}
+		});
+		
+		event.preventDefault();
+	});
+	
+	feedbackCloseButton.live('click', function(event){
+		$(this).parent().remove();
+		
+		feedbackForm.clearForm();
+		feedbackInputs.blur();
+		feedbackForm.css('visibility', 'visible');
+		
+		event.preventDefault();
+	});
+	
 	/* Форма отправки резюме */
 	var hireModal = $('#hire .b-modal-window'),
 		hireContainer = $('#hire .b-hire'),
 		hireLink = $('#hire-link'),
 		hireImage = $('#hire-image'),
 		hireForm = $('#hire-form'),
+		hireInputs = $('input, textarea', hireForm),
+		hireFileContainer = $('#hire-resume-container'),
 		hireCloseButton = $('#hire-close'),
 		hireFormLoader = $(loaderHTMLTemplate);
 	
@@ -106,13 +147,21 @@
 			hireFormLoader.hide();
 			
 			if( typeof response === 'string' ){
-				hireContainer.hide().after(response);
+				hireContainer.css('visibility', 'hidden').after(response);
 			}
 		} 
 	});
 	
 	hireCloseButton.live('click', function(event){
 		modal.hide();
+		
+		$(this).parent().remove();
+		
+		hireForm.clearForm();
+		hireInputs.blur();
+		hireFileContainer.html(hireFileContainer.html());
+		hireContainer.css('visibility', 'visible');
+		
 		event.preventDefault();
 	});
 });

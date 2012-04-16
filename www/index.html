@@ -226,10 +226,10 @@
 				<div id="contacts" class="b-section b-last-textblock">
 					<div class="l-wrapper">
 						^contacts.string[$XSL_OUTPUT]
-						<div class="l-column-280">
-							<h3 style="margin: 0 0 26px 0;">Есть интересный проект?</h3>
-							<form class="b-feedback-form" action="?" method="post">
+						<div id="feedback" class="l-column-280" style="position: relative">
+							<form id="feedback-form" class="b-feedback-form" action="?" method="post">
 								<fieldset>
+									<h3 class="title">Есть интересный проект?</h3>
 									<div class="b-compact-field b-wide-input">
 										<label class="b-hint-label" for="f-feedback">Суть идеи</label>
 										<textarea id="f-feedback" class="b-textarea" name="feedback" rows="6" cols="50"></textarea>
@@ -299,7 +299,7 @@
 										<label class="b-hint-label" for="f-hire-contacts">Электронная почта или телефон</label>
 										<input id="f-hire-contacts" class="b-input" type="text" name="hire_contacts"/>
 									</div>
-									<div class="b-field">
+									<div id="hire-resume-container" class="b-field">
 										<input class="b-file" type="file" name="hire_resume"/>
 									</div>
 								</div>
