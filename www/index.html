@@ -24,6 +24,7 @@
 			<![endif]-->
 			
 			<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+			<script type="text/javascript" src="./js/jquery.form.js"></script>
 			<script type="text/javascript" src="./js/jquery.tabs.js"></script>
 			<script type="text/javascript" src="./js/jquery.gallery.js"></script>
 			<script type="text/javascript" src="./js/jquery.hints.js"></script>
@@ -249,7 +250,7 @@
 						</div>
 					</div>
 					<div class="b-modal-link" style="margin-top: -16px">
-						<a class="link js-modal" href="#job">
+						<a class="link js-modal" href="#hire">
 							<span class="text">Работа у&nbsp;нас</span>
 						</a>
 					</div>
@@ -281,7 +282,7 @@
 					</a>
 				</div>
 			</div>
-			<div id="job" class="b-modal-content">
+			<div id="hire" class="b-modal-content">
 				<div class="b-modal-window">
 					<div class="b-hire">
 						<h2 class="title">Хотите работать у&nbsp;нас? <br/>Мы всегда рады талантливым сотрудникам!</h2>
@@ -292,20 +293,20 @@
 								<div class="column">
 									<div class="b-field b-wide-input">
 										<label class="b-hint-label" for="f-hire-name">Ваше имя</label>
-										<input id="f-hire-name" class="b-input" type="text" name="hire-name"/>
+										<input id="f-hire-name" class="b-input" type="text" name="hire_name"/>
 									</div>
 									<div class="b-field b-wide-input">
 										<label class="b-hint-label" for="f-hire-contacts">Электронная почта или телефон</label>
-										<input id="f-hire-contacts" class="b-input" type="text" name="hire-contacts"/>
+										<input id="f-hire-contacts" class="b-input" type="text" name="hire_contacts"/>
 									</div>
 									<div class="b-field">
-										<input class="b-file" type="file" name="hire-resume"/>
+										<input class="b-file" type="file" name="hire_resume"/>
 									</div>
 								</div>
 								<div class="column">
 									<div class="b-field b-wide-input">
 										<label class="b-hint-label" for="f-hire-else">Что-то ещё</label>
-										<textarea id="f-hire-else" class="b-textarea" name="hire-else" rows="6" cols="50"></textarea>
+										<textarea id="f-hire-else" class="b-textarea" name="hire_else" rows="6" cols="50"></textarea>
 									</div>
 									<div class="b-submit-group">
 										<input class="b-submit" type="submit" value="Отправить"/>

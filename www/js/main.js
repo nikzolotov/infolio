@@ -40,7 +40,7 @@
 	/* Подсказки в полях ввода */
 	$('.b-hint-label').hints();
 	
-	/* Вход для клиентов */
+	/* Форма логина */
 	var loginModal = $('#login .b-modal-window'),
 		loginForm = $('#login-form'),
 		loaderHTMLTemplate = '<div class="b-loading-overlay"><span class="b-loading"><img class="image" src="./img/loading.gif" alt="Loading"/></span></div>',
@@ -76,10 +76,15 @@
 	});
 	
 	/* Форма отправки резюме */
-	var hireLink = $('#hire-link'),
+	var hireModal = $('#hire .b-modal-window'),
+		hireContainer = $('#hire .b-hire'),
+		hireLink = $('#hire-link'),
 		hireImage = $('#hire-image'),
-		hireForm = $('#hire-form');
+		hireForm = $('#hire-form'),
+		hireCloseButton = $('#hire-close'),
+		hireFormLoader = $(loaderHTMLTemplate);
 	
+	hireFormLoader.appendTo(hireModal);
 	hireForm.hide();
 	
 	hireLink.click(function(event){
@@ -88,6 +93,26 @@
 		hireImage.toggle();
 		hireForm.toggle();
 		
+		event.preventDefault();
+	});
+	
+	hireForm.ajaxForm({
+		type: 'post',
+		url: '/hr.html',
+		beforeSubmit: function(){
+			hireFormLoader.show();
+		},
+		success: function(response){
+			hireFormLoader.hide();
+			
+			if( typeof response === 'string' ){
+				hireContainer.hide().after(response);
+			}
+		} 
+	});
+	
+	hireCloseButton.live('click', function(event){
+		modal.hide();
 		event.preventDefault();
 	});
 });

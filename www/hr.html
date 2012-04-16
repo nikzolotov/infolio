@@ -1,0 +1,66 @@
+﻿@main[]
+	$resume[$form:hire_resume]
+	
+	^if(def $resume){
+		$dateNow[^date::now[]]
+		$dateNow[^dateNow.sql-string[]]
+		
+		$resumeMonth[^dateNow.left(7)]
+		$resumeName[^math:uuid[]]
+		$resumeExt[^file:justext[$resume.name]]
+	}
+	
+	^sendEmail[
+		$.name[$name]
+		$.contacts[$contacts]
+		$.else[$else]
+		$.resumePath[^if(def $resume){/hr/$resumeMonth/${resumeName}.$resumeExt}]
+	]
+	^if(def $resume){
+		^resume.save[binary;$MAIN:UPLOAD_DIR/hr/$resumeMonth/${resumeName}.$resumeExt]
+	}
+	
+	<div class="b-hire-message">
+		<p class="b-success">Отправлено.</p>
+		<input id="hire-close" class="b-submit" type="submit" value="Ok"/>
+	</div>
+	
+	$response:content-type[text/html^;charset=utf-8]
+
+@GET_name[]
+	$result[^if($form:hire_name ne "Ваше имя"){$form:hire_name}]
+
+@GET_contacts[]
+	$result[^if($form:hire_contacts ne "Электронная почта или телефон"){$form:hire_contacts}]
+
+@GET_else[]
+	$result[^if($form:hire_else ne "Что-то ещё"){$form:hire_else}]
+
+@sendEmail[_params]
+	^if(def $_params && $_params is hash){
+		^try{
+			^mail:send[
+				$.from[$MAIN:SYSTEM_EMAIL]
+				$.to[$MAIN:MANAGERS_EMAIL]
+				$.subject[Отклик на вакансию]
+				$.html{
+					<p>Привет, у нас новый соискатель:</p>
+					^if(def $_params.name){
+						<p><strong>Имя</strong>: $_params.name</p>
+					}
+					^if(def $_params.contacts){
+						<p><strong>Контакты</strong>: $_params.contacts</p>
+					}
+					^if(def $_params.else){
+						<p><strong>Ещё</strong>: $_params.else</p>
+					}
+					^if(def $_params.resumePath){
+						<p>Так же он приложил <a href="http://${env:SERVER_NAME}${MAIN:UPLOAD_DIR}$_params.resumePath">резюме</a>.</p>
+					}
+				}
+				$.text[]
+			]
+		}{
+			$exception.handled(true)
+		}
+	}

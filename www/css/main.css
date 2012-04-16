@@ -1088,6 +1088,12 @@ SUB {
 	color: #970404;
 	}
 
+/* Form success */
+.b-success {
+	margin-bottom: 24px;
+	font: italic 20px/24px Georgia, Times, "Times New Roman", serif;
+	}
+
 /* =Forms
 --------------------------------------- */
 
@@ -1112,3 +1118,12 @@ SUB {
 		.b-hire-form .b-textarea {
 			height: 118px;
 			}
+.b-hire-message {
+	width: 760px;
+	height: 238px;
+	padding-top: 148px;
+	text-align: center;
+	}
+	.b-hire-message .b-submit {
+		width: 124px;
+		}
