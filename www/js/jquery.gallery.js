@@ -45,12 +45,12 @@
 						images[thisIndex] = $('<img class="' + SETTINGS.imageClass + '" alt="' + thisTitle + '"/>').hide().insertAfter(images[prevImageNumber(thisIndex)]);
 						
 						loaderTimeout = setTimeout(function(){
-							loader.fadeIn(SETTINGS.selectedClass);
+							loader.fadeIn(SETTINGS.animationTime);
 						}, 200)
 						
 						images[thisIndex].load(function(){
 							clearTimeout(loaderTimeout);
-							loader.fadeOut(SETTINGS.selectedClass);
+							loader.fadeOut(SETTINGS.animationTime);
 							
 							switchImage(thisIndex);
 						}).attr('src', thisHref);

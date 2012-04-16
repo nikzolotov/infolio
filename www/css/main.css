@@ -348,7 +348,7 @@ SUB {
 	top: 50%;
 	left: 50%;
 	display: none;
-	margin: -8px 0 0 -8px;
+	margin: -18px 0 0 -18px;
 	padding: 10px;
 	opacity: .7;
 	background: #000;
@@ -359,6 +359,21 @@ SUB {
 	border-radius: 10px;
 	}
 	.b-loading .image {
+		display: block;
+		}
+
+/* Loading overlay */
+.b-loading-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .75);
+	}
+	.b-loading-overlay .b-loading {
 		display: block;
 		}
 
@@ -1007,19 +1022,6 @@ SUB {
 /* =Form elements
 --------------------------------------- */
 
-/* Form field */
-.b-field {
-	margin-bottom: 18px;
-	}
-.b-compact-field {
-	margin-bottom: 14px;
-	}
-
-/* Submit container */
-.b-submit-group {
-	text-align: right;
-	}
-
 /* Label goes to input */
 .b-hint-label {
     display: none;
@@ -1063,6 +1065,27 @@ SUB {
 .b-submit {
 	margin: 0;
 	padding: 5px 14px;
+	}
+
+/* Form field */
+.b-field {
+	margin-bottom: 18px;
+	}
+.b-compact-field {
+	margin-bottom: 14px;
+	}
+
+/* Submit container */
+.b-submit-group {
+	text-align: right;
+	}
+
+/* Form error */
+.b-error {
+	margin: -28px 0 12px 0;
+	font-size: 12px;
+	line-height: 16px;
+	color: #970404;
 	}
 
 /* =Forms
