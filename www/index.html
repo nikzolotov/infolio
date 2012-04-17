@@ -7,6 +7,9 @@
 	
 	$contacts[^xdoc::load[$DATA_DIR/contacts.xml]]
 	$contacts[^contacts.transform[$TEMPLATES_DIR/contacts.xslt]]
+	
+	$dateNow[^date::now[]]
+	$dateNow[^dateNow.sql-string[]]
 
 @main[]
 	<!DOCTYPE html>
@@ -257,7 +260,7 @@
 				</div>
 			</div>
 			<div class="l-footer">
-				<div class="b-copyright">&copy;&nbsp;2012&nbsp;ООО &laquo;Студия Инфолио&raquo;</div>
+				<div class="b-copyright">&copy;&nbsp;2008&ndash;^dateNow.left(4) ООО&nbsp;&laquo;Студия Инфолио&raquo;</div>
 			</div>
 			<div id="login" class="b-modal-content">
 				<div class="b-modal-window">
