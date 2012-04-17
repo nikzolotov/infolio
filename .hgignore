@@ -1,4 +1,5 @@
 syntax: glob
+cgi-bin/*
 design/*
 logs/*
 parser3.conf
