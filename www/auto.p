@@ -3,7 +3,7 @@
 	$TEMPLATES_DIR[/../templates]
 	$UPLOAD_DIR[/upload]
 	
-	$XSL[
+	$XSL_OUTPUT[
 		$.method[xml]
 		$.indent[yes]
 		$.omit-xml-declaration[yes]
