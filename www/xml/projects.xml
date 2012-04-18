@@ -13,6 +13,22 @@
 					<name>th_01.jpg</name>
 				</preview>
 			</image>
+			<image>
+				<fullsize>
+					<name>02.jpg</name>
+				</fullsize>
+				<preview>
+					<name>th_02.jpg</name>
+				</preview>
+			</image>
+			<image>
+				<fullsize>
+					<name>03.jpg</name>
+				</fullsize>
+				<preview>
+					<name>th_03.jpg</name>
+				</preview>
+			</image>
 		</gallery>
 	</project>
 	<project key="tsm">
