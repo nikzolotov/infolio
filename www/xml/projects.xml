@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <projects>
+	<!--project key="id">
+		<title>title</title>
+		<link>URL</link>
+		<year>1900</year>
+		<desc>description</desc>
+		<frames>
+			<image file="file_name" thumbnail="file_name" alt="some text (optional)" />
+			<video file="file_name" preview="file name" thumbnail="file_name" alt="some text (optional)" />
+			<flash file="file_name" thumbnail="file_name" alt="some text (optional)" [some HTML OBJECT params] />
+		</frames>
+	</project-->
 	<project key="center-skad">
 		<title>Сайт</title>
 		<link>center-skad.ru</link>
