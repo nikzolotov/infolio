@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <projects>
+	<project key="center-skad">
+		<title>Сайт</title>
+		<link>center-skad.ru</link>
+		<year>2011</year>
+		<gallery>
+			<image>
+				<fullsize>
+					<name>01.jpg</name>
+				</fullsize>
+				<preview>
+					<name>th_01.jpg</name>
+				</preview>
+			</image>
+		</gallery>
+	</project>
 	<project key="tsm">
 		<title>Сайт и&#160;рекламная кампания</title>
 		<link>www.tverstroymash.ru</link>
