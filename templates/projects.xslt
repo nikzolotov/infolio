@@ -56,8 +56,7 @@
 				<xsl:if test="position() = 1">
 					<xsl:attribute name="class">link selected</xsl:attribute>
 				</xsl:if>
-				<img class="image" src="./img/projects/{../../@key}/{preview/name/text()}" alt="{preview/title/text()}" width="70" height="70"/>
-				<i class="overlay"><xsl:text><![CDATA[]]></xsl:text></i>
+				<img class="b-previews-image" src="./img/projects/{../../@key}/{preview/name/text()}" alt="{preview/title/text()}" width="70" height="70"/>
 			</a>
 		</li>
 	</xsl:template>
