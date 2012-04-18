@@ -2,7 +2,7 @@
 <projects>
 	<!--project key="id">
 		<title>title</title>
-		<link>URL</link>
+		<link href="URL thih protocol (optional)">URL if no @href or site name if @href is defined</link>
 		<year>1900</year>
 		<desc>description</desc>
 		<frames>
@@ -367,7 +367,7 @@
 	</project>
 	<project key="armata">
 		<title>Сайт и&#160;логотип</title>
-		<link>www.logex.ru</link>
+		<link>www.armata.ru</link>
 		<year>2008</year>
 		<desc>Компания АРМАТА&#160;&#8212; это воплощение самых смелых идей по&#160;применению натуральных материалов в&#160;интерьере.</desc>
 		<gallery>
