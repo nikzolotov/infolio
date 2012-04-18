@@ -40,7 +40,7 @@
 * HTML .b-previews .item {
 	display: inline;
 	}
-	* HTML .b-previews .selected .image {
+	* HTML .b-previews .selected .b-previews-image {
 		position: relative;
 		}
 

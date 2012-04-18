@@ -9,7 +9,7 @@
 			imageClass: '',
 			selectedClass: 'selected',
 			animationTime: 200,
-			loaderHTML: '<span class="loading">Loading...</span>'
+			loaderHTML: '<span class="loader">Loading...</span>'
 		};
 
 		return this.each(function(){
@@ -20,9 +20,10 @@
 			var container = $(this),
 				links = $(SETTINGS.linkSelector, container),
 				images = new Array(links.length),
-				currentImageNumber = 0,
-				loader = $(SETTINGS.loaderHTML),
-				loaderTimeout = 0;
+				loaders = [],
+				currentImageNumber = 0;
+				//loader = $(SETTINGS.loaderHTML),
+				//loaderTimeout = 0;
 						
 			init();
 			assignEvents();
@@ -30,7 +31,15 @@
 			function init(){
 				images[0] = $('.' + SETTINGS.imageClass, container);
 				
-				loader.insertAfter(images[0]);
+				for( var i = 0; i < links.length; i++ ){
+					loaders[i] = {
+						image: $(SETTINGS.loaderHTML),
+						timeout: 0
+					}
+					
+					loaders[i].image.appendTo(links.eq(i));
+				}
+				//loader.insertAfter(images[0]);
 			}
 			
 			function assignEvents(){
@@ -41,16 +50,23 @@
 						thisTitle = thisLink.attr('title'),
 						targetImage = images[thisIndex];
 					
+					stopOtherLoading();
+					
 					if( typeof targetImage === 'undefined' ){
-						images[thisIndex] = $('<img class="' + SETTINGS.imageClass + '" alt="' + thisTitle + '"/>').hide().insertAfter(images[prevImageNumber(thisIndex)]);
+						images[thisIndex] = $('<img class="' + SETTINGS.imageClass + '" alt="' + thisTitle + '"/>')
+							.data('loading', true)
+							.hide()
+							.insertAfter(images[prevImageNumber(thisIndex)]);
 						
-						loaderTimeout = setTimeout(function(){
-							loader.fadeIn(SETTINGS.animationTime);
-						}, 200)
+						loaders[thisIndex].timeout = setTimeout(function(){
+							loaders[thisIndex].image.show();
+						}, 200);
 						
 						images[thisIndex].load(function(){
-							clearTimeout(loaderTimeout);
-							loader.fadeOut(SETTINGS.animationTime);
+							$(this).removeData('loading');
+							
+							clearTimeout(loaders[thisIndex].timeout);
+							loaders[thisIndex].image.hide();
 							
 							switchImage(thisIndex);
 						}).attr('src', thisHref);
@@ -69,7 +85,7 @@
 			function switchImage( imageNumber ){
 				if( imageNumber > currentImageNumber ){
 					images[imageNumber].fadeIn(SETTINGS.animationTime, function(){
-						images[currentImageNumber].hide(function(){
+						images[currentImageNumber].hide(0, function(){
 							currentImageNumber = imageNumber;
 						});
 					});
@@ -86,6 +102,18 @@
 				for( var i = imageNumber - 1; i >= 0; i-- ){
 					if( typeof images[i] !== 'undefined' ){
 						return i;
+					}
+				}
+			}
+			
+			function stopOtherLoading(){
+				for( var i = 0; i < images.length; i++ ){
+					if( typeof images[i] !== 'undefined' && images[i].data('loading') ){
+						images[i].remove();
+						images[i] = void 0;
+						
+						loaders[i].image.hide();
+						clearTimeout(loaders[i].timeout);
 					}
 				}
 			}

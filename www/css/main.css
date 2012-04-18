@@ -805,31 +805,15 @@ SUB {
 			position: relative;
 			display: block;
 			}
-			.b-previews .image {
-				display: block;
-				}
-			.b-previews .overlay {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				display: none;
-				width: 100%;
-				height: 100%;
-				background: rgba(255, 255, 255, .2);
-				}
-			.b-previews .link:hover .overlay {
+			.b-previews-image {
 				display: block;
 				}
 		.b-previews .selected {
 			margin: -2px;
 			cursor: default;
 			}
-			.b-previews .selected .image {
+			.b-previews .selected .b-previews-image {
 				border: 2px solid #1B2029;
-				}
-			.b-previews .selected:hover .overlay {
-				display: none;
 				}
 
 /* Clients */

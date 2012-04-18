@@ -2,12 +2,20 @@
 	/* Содержание */
 	contents.init();
 	
-	/* Процентные отступы у лого */
-	var header = $('.l-header'),
+	/* Процентные отступы у лого и отступ снизу */
+	var theWindow = $(window),
+		header = $('.l-header'),
 		logo = $('.b-logo .image', header);
+		footer = $('.l-footer'),
+		footerPadding = 0;
 	
 	logo.load(setHeaderPadding);
-	$(window).resize(setHeaderPadding);
+	setFooterPadding();
+	
+	theWindow.resize(function(){
+		setHeaderPadding();
+		setFooterPadding();
+	});
 	
 	function setHeaderPadding(){
 		header.css({
@@ -16,6 +24,16 @@
 		});
 		
 		contents.update();
+	}
+	
+	function setFooterPadding(){
+		footerPadding = theWindow.height() - 434;
+		
+		if( footerPadding < 38 ){
+			footerPadding = 38;
+		}
+		
+		footer.css('padding-bottom', footerPadding);
 	}
 	
 	/* Табы услуг */
