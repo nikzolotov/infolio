@@ -35,7 +35,7 @@
 					</li>
 					<xsl:if test="twitter-href/text()">
 						<li class="item">
-							<a class="link" href="{twitter-href/text()}">
+							<a class="link" href="{twitter-href/text()}" target="_blank">
 								<b class="b-icon b-icon-twitter">
 									<b><xsl:text><![CDATA[]]></xsl:text></b>
 								</b>
@@ -45,7 +45,7 @@
 					</xsl:if>
 					<xsl:if test="facebook-href/text()">
 						<li class="item">
-							<a class="link" href="{facebook-href/text()}">
+							<a class="link" href="{facebook-href/text()}" target="_blank">
 								<b class="b-icon b-icon-facebook">
 									<b><xsl:text><![CDATA[]]></xsl:text></b>
 								</b>
