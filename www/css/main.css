@@ -818,7 +818,7 @@ SUB {
 
 /* Clients */
 .b-clients {
-	margin: -14px -40px 18px -40px;
+	margin: -14px -5px 18px -25px;
 	overflow: hidden;
 	text-align: center;
 	font-size: 16px;
@@ -826,7 +826,7 @@ SUB {
 	}
 	.b-clients .item {
 		float: left;
-		margin: 14px 0 0 0;
+		margin: 14px 0 0 20px;
 		}
 	.b-clients .item:before {
 		content: none;
