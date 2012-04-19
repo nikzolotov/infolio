@@ -18,14 +18,19 @@
 				<xsl:attribute name="style">display: none;</xsl:attribute>
 			</xsl:if>
 			<div class="illustrations">
-				<xsl:apply-templates select="gallery/image[1]" mode="main"/>
+				<xsl:apply-templates select="frames/image[1]" mode="main"/>
 			</div>
 			<div class="intro">
 				<h3 class="title">
 					<xsl:value-of select="title/text()"/>
 				</h3>
 				<div class="meta">
-					<a class="link" href="http://{link/text()}/">
+					<a class="link" href="http://{link/text()}/" target="_blank">
+						<xsl:if test="link/@href">
+							<xsl:attribute name="href">
+								<xsl:value-of select="link/@href"/>
+							</xsl:attribute>
+						</xsl:if>
 						<xsl:value-of select="link/text()"/>
 					</a>
 					<br/>
@@ -40,11 +45,11 @@
 					<xsl:value-of select="desc/text()"/>
 				</p>
 			</div>
-			<xsl:apply-templates select="gallery"/>
+			<xsl:apply-templates select="frames"/>
 		</div>
 	</xsl:template>
 	
-	<xsl:template match="gallery">
+	<xsl:template match="frames">
 		<ul class="b-previews">
 			<xsl:apply-templates select="image"/>
 		</ul>
@@ -52,17 +57,17 @@
 	
 	<xsl:template match="image">
 		<li class="item">
-			<a class="link" href="./img/projects/{../../@key}/{fullsize/name/text()}" title="{fullsize/title/text()}">
+			<a class="link" href="./img/projects/{../../@key}/{@file}" title="{@alt}">
 				<xsl:if test="position() = 1">
 					<xsl:attribute name="class">link selected</xsl:attribute>
 				</xsl:if>
-				<img class="b-previews-image" src="./img/projects/{../../@key}/{preview/name/text()}" alt="{preview/title/text()}" width="70" height="70"/>
+				<img class="b-previews-image" src="./img/projects/{../../@key}/{@thumbnail}" alt="{@alt}" width="70" height="70"/>
 			</a>
 		</li>
 	</xsl:template>
 	
 	<xsl:template match="image" mode="main">
-		<img class="illustration" src="./img/projects/{../../@key}/{fullsize/name/text()}" alt="{fullsize/title/text()}"/>
+		<img class="illustration" src="./img/projects/{../../@key}/{@file}" alt="{@alt}"/>
 	</xsl:template>
 	
 	<xsl:template match="project" mode="navigation">

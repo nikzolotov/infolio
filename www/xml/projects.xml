@@ -13,384 +13,120 @@
 	</project-->
 	<project key="center-skad">
 		<title>Сайт</title>
-		<link>center-skad.ru</link>
+		<link>www.center-skad.ru</link>
 		<year>2011</year>
 		<desc>Основная цель сайта Центра Каркасного Домостроения — создать настроение и показать строящиеся и уже построенные дома, именно поэтому специально для этого сайта была проведена фотосессия продолжительностью в полгода.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>01.jpg</name>
-				</fullsize>
-				<preview>
-					<name>th_01.jpg</name>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>02.jpg</name>
-				</fullsize>
-				<preview>
-					<name>th_02.jpg</name>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>03.jpg</name>
-				</fullsize>
-				<preview>
-					<name>th_03.jpg</name>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="01.jpg" thumbnail="th_01.jpg"/>
+			<image file="02.jpg" thumbnail="th_02.jpg"/>
+			<image file="03.jpg" thumbnail="th_03.jpg"/>
+		</frames>
 	</project>
 	<project key="tsm">
 		<title>Сайт и&#160;рекламная кампания</title>
 		<link>www.tverstroymash.ru</link>
 		<year>2008</year>
 		<desc>&#171;Тверьстроймаш&#187;&#160;&#8212; машиностроительный завод. Занимается разработкой и&#160;производством прицепов и&#160;полуприцепов различного предназначения, прежде всего полуприцепов-тяжеловозов для перевозки больших и&#160;тяжелых грузов.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Индивидуальные проекты</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.png</name>
-					<title>Превью индивидуальных проектов</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.jpg</name>
-					<title>Каталог продукции</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.png</name>
-					<title>Превью каталога продукции</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.png" alt="Индивидуальные проекты"/>
+			<image file="3.jpg" thumbnail="preview-3.png" alt="Каталог продукции"/>
+		</frames>
 	</project>
 	<project key="tverlife">
 		<title>Сайт и&#160;продвижение</title>
 		<link>www.tverlife.ru</link>
 		<year>2008</year>
 		<desc>Тверская жизнь&#160;&#8212; областная общественно-политическая газета на&#160;русском языке, издающаяся в&#160;Твери.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Tve</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Новости</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.png</name>
-					<title>rlife</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.jpg</name>
-					<title>Блоги</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.png</name>
-					<title>.ru</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.png" alt="Новости"/>
+			<image file="3.jpg" thumbnail="preview-3.png" alt="Блоги"/>
+		</frames>
 	</project>
 	<project key="profoptic">
 		<title>Сайт</title>
 		<link>www.profoptic.ru</link>
 		<year>2008</year>
 		<desc>Интернет-магазин &#171;PROFOPTIC&#187; предлагает оптические приборы лучших отечественных и&#160;зарубежных производителей.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Каталог продукции</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.png</name>
-					<title>Превью каталога продукции</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.png" alt="Каталог продукции"/>
+		</frames>
 	</project>
 	<project key="arbalet-gold">
 		<title>Сайт</title>
 		<link>www.arbalet-gold.ru</link>
 		<year>2008</year>
 		<desc>Фирма, организованная спортсменами-лучниками и&#160;специалистами по&#160;стрелковому оружию, которые не&#160;один год проработали в&#160;фирмах, торгующих спортивных снаряжением и&#160;товарами для охоты.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.jpg</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Каталог продукции</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.jpg</name>
-					<title>Превью каталога продукции</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.jpg" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.jpg" alt="Каталог продукции"/>
+		</frames>
 	</project>
 	<project key="trendless">
 		<title>Сайт</title>
 		<link>www.trendless.ru</link>
 		<year>2008</year>
 		<desc>Trendless&#160;&#8212; интернет-магазин немассовой молодежной одежды от&#160;восходящих дизайнеров, магазин вещей, которые не&#160;рекламируется в&#160;глянцевых журналах, но&#160;выражают модные тенденции.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Страница футболки</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.png</name>
-					<title>Превью страницы футболки</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.jpg</name>
-					<title>Страница о доставке и оплате</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.png</name>
-					<title>Превью страницы о доставке</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.png" alt="Страница футболки"/>
+			<image file="3.jpg" thumbnail="preview-3.png" alt="Страница о доставке и оплате"/>
+		</frames>
 	</project>
 	<project key="pr-inc">
 		<title>Сайт</title>
 		<link>www.pr-inc.ru</link>
 		<year>2008</year>
 		<desc>PR&#160;Inc./DDB предоставляет широкий спектр услуг по&#160;разработке и&#160;реализации стратегий и&#160;программ в&#160;области связей с&#160;общественностью.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Страница услуг</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.png</name>
-					<title>Превью страницы услуг</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.jpg</name>
-					<title>Страница клиентов</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.png</name>
-					<title>Превью страницы клиентов</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.png" alt="Страница услуг"/>
+			<image file="3.jpg" thumbnail="preview-3.png" alt="Страница клиентов"/>
+		</frames>
 	</project>
 	<project key="maximov">
 		<title>Флеш-сайт</title>
 		<link>www.max-show.ru</link>
 		<year>2008</year>
 		<desc>Максимов Шоу можно без ложной скромности назвать одним из&#160;лучших шоу-проектов в&#160;Москве.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Главная страница</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Страница исполнителя</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.jpg</name>
-					<title>Превью страницы исполнителя</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.png</name>
-					<title>Форум</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.png</name>
-					<title>Превью форума</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Главная страница"/>
+			<image file="2.jpg" thumbnail="preview-2.jpg" alt="Страница исполнителя"/>
+			<image file="3.png" thumbnail="preview-3.png" alt="Форум"/>
+		</frames>
 	</project>
 	<project key="kirill-istomin">
 		<title>Сайт</title>
 		<link>www.kirillistomin.com</link>
 		<year>2008</year>
 		<desc style="margin: 0 -20px 0 -60px;">Кирилл Истомин&#160;&#8212; владелец нью-йоркской фирмы, занимающейся дизайном и&#160;декорированием интерьеров, получил образование в&#160;знаменитой Parsons School of&#160;Design (Нью-Йорк) по&#160;специальности декорирования интерьеров и&#160;начал свою профессиональную карьеру в&#160;ведущей декораторской фирме Нью-Йорка &#171;Pаrish&#8212;Hadley&#187;. Среди клиентов этой старейшей фирмы такие знаменитости как Бруки Астор, Оскар де&#160;ла&#160;Рента, семья Рокфеллеров, Жаклин Кеннеди, по&#160;заказу которой оформлялись интерьеры Белого дома.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Страница декоратора</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью страницы декоратора</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Галерея интерьеров</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.jpg</name>
-					<title>Превью галереи интерьеров</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.jpg</name>
-					<title>Галерея набросков</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.jpg</name>
-					<title>Превью галереи набросков</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Страница декоратора"/>
+			<image file="2.jpg" thumbnail="preview-2.jpg" alt="Галерея интерьеров"/>
+			<image file="3.jpg" thumbnail="preview-3.jpg" alt="Галерея набросков"/>
+		</frames>
 	</project>
 	<project key="logex">
 		<title>Фирменный стиль и&#160;сайт</title>
 		<link>www.logex.ru</link>
 		<year>2008</year>
 		<desc>Компания &#171;ЛоджекС&#187; вот уже несколько лет успешно осуществляет перевозку крупногабаритных и&#160;тяжеловесных грузов, специализируясь на&#160;транспортировке яхт и&#160;катеров.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.jpg</name>
-					<title>Фирменный стиль</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью фирменного стиля</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Главная страница сайта</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>3.jpg</name>
-					<title>Главная страница сайта</title>
-				</fullsize>
-				<preview>
-					<name>preview-3.png</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.jpg" thumbnail="preview-1.png" alt="Фирменный стиль"/>
+			<image file="2.jpg" thumbnail="preview-2.png" alt="Главная страница сайта"/>
+			<image file="3.jpg" thumbnail="preview-3.png" alt="Главная страница сайта"/>
+		</frames>
 	</project>
 	<project key="armata">
 		<title>Сайт и&#160;логотип</title>
 		<link>www.armata.ru</link>
 		<year>2008</year>
 		<desc>Компания АРМАТА&#160;&#8212; это воплощение самых смелых идей по&#160;применению натуральных материалов в&#160;интерьере.</desc>
-		<gallery>
-			<image>
-				<fullsize>
-					<name>1.png</name>
-					<title>Логотип</title>
-				</fullsize>
-				<preview>
-					<name>preview-1.png</name>
-					<title>Превью логотипа</title>
-				</preview>
-			</image>
-			<image>
-				<fullsize>
-					<name>2.jpg</name>
-					<title>Главная страница сайта</title>
-				</fullsize>
-				<preview>
-					<name>preview-2.jpg</name>
-					<title>Превью главной страницы</title>
-				</preview>
-			</image>
-		</gallery>
+		<frames>
+			<image file="1.png" thumbnail="preview-1.png" alt="Логотип"/>
+			<image file="2.jpg" thumbnail="preview-2.jpg" alt="Главная страница сайта"/>
+		</frames>
 	</project>
 </projects>
