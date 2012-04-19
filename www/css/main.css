@@ -1085,6 +1085,9 @@ SUB {
 .b-feedback-form .title {
 	margin: 0 0 26px 0;
 	}
+.b-feedback-form .b-textarea {
+	height: 121px;
+	}
 
 /* Hire */
 .b-hire-form {

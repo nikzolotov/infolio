@@ -186,6 +186,9 @@ var contents = (function(){
 		},
 		update: function(){
 			updateSectionAreas();
+		},
+		isHidden: function(){
+			return _contents.css('display') == 'none';
 		}
 	};
 })();

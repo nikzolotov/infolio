@@ -7,9 +7,13 @@
 		header = $('.l-header'),
 		logo = $('.b-logo .image', header);
 		footer = $('.l-footer'),
+		contactsSection = $('#contacts'),
 		footerPadding = 0;
 	
-	logo.load(setHeaderPadding);
+	logo.load(function(){
+		setHeaderPadding();
+		setFooterPadding();
+	});
 	setFooterPadding();
 	
 	theWindow.resize(function(){
@@ -27,9 +31,9 @@
 	}
 	
 	function setFooterPadding(){
-		footerPadding = theWindow.height() - 434;
+		footerPadding = theWindow.height() - contactsSection.height() - parseInt(contactsSection.css("padding-top"), 10) - parseInt(contactsSection.css("padding-bottom"), 10) - 84;
 		
-		if( footerPadding < 38 ){
+		if( footerPadding < 38 || contents.isHidden() ){
 			footerPadding = 38;
 		}
 		
