@@ -63,12 +63,17 @@
 	$('.b-hint-label').hints();
 	
 	/* Форма логина */
-	var loginModal = $('#login .b-modal-window'),
+	var loginModalLink = $('#clients .js-modal'),
+		loginModal = $('#login .b-modal-window'),
 		loginForm = $('#login-form'),
 		loaderHTMLTemplate = '<div class="b-loading-overlay"><span class="b-loading"><img class="image" src="./img/loading.gif" alt="Loading"/></span></div>',
 		loginFormLoader = $(loaderHTMLTemplate);
 	
 	loginFormLoader.appendTo(loginModal);
+	
+	loginModalLink.click(function(){
+		$('.b-error', loginForm).remove();
+	});
 	
 	loginForm.submit(function(event){
 		loginFormLoader.show();
@@ -137,7 +142,8 @@
 	});
 	
 	/* Форма отправки резюме */
-	var hireModal = $('#hire .b-modal-window'),
+	var hireModalLink = $('#contacts .js-modal'),
+		hireModal = $('#hire .b-modal-window'),
 		hireContainer = $('#hire .b-hire'),
 		hireLink = $('#hire-link'),
 		hireImage = $('#hire-image'),
@@ -148,7 +154,13 @@
 		hireFormLoader = $(loaderHTMLTemplate);
 	
 	hireFormLoader.appendTo(hireModal);
-	hireForm.hide();
+	
+	hireModalLink.click(function(){
+		hireLink.removeClass('selected');
+		
+		hireImage.show();
+		hireForm.hide();
+	});
 	
 	hireLink.click(function(event){
 		$(this).toggleClass('selected');
