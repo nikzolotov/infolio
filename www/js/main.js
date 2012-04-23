@@ -55,6 +55,7 @@
 	/* Галереи в портфолио */
 	$('.b-project').gallery({
 		linkSelector: '.b-previews .link',
+		nextLinkSelector: '.next-link',
 		imageClass: 'illustration',
 		loaderHTML: '<span class="b-loading"><img class="image" src="./img/loading.gif" alt="Loading"/></span>'
 	});

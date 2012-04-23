@@ -19,6 +19,9 @@
 			</xsl:if>
 			<div class="illustrations">
 				<xsl:apply-templates select="frames/image[1]" mode="main"/>
+				<xsl:if test="frames/image[2]">
+					<a class="next-link" href="./img/projects/{@key}/{frames/image[2]/@file}">Следующее изображение</a>
+				</xsl:if>
 			</div>
 			<div class="intro">
 				<h3 class="title">

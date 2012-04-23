@@ -1,4 +1,9 @@
-﻿/* Forms */
+﻿/* Content blocks */
+.b-project .next-link {
+	background: url('../img/0.gif');
+	}
+
+/* Forms */
 .b-input,
 .b-textarea {
 	box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, .75);

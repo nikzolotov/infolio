@@ -6,6 +6,7 @@
 	$.fn.gallery = function( userSettings ){
 		var SETTINGS = {
 			linkSelector: '',
+			nextLinkSelector: '',
 			imageClass: '',
 			selectedClass: 'selected',
 			animationTime: 200,
@@ -21,9 +22,8 @@
 				links = $(SETTINGS.linkSelector, container),
 				images = new Array(links.length),
 				loaders = [],
+				nextLink = $(SETTINGS.nextLinkSelector, container),
 				currentImageNumber = 0;
-				//loader = $(SETTINGS.loaderHTML),
-				//loaderTimeout = 0;
 						
 			init();
 			assignEvents();
@@ -39,7 +39,6 @@
 					
 					loaders[i].image.appendTo(links.eq(i));
 				}
-				//loader.insertAfter(images[0]);
 			}
 			
 			function assignEvents(){
@@ -77,6 +76,17 @@
 					
 					links.removeClass(SETTINGS.selectedClass);
 					thisLink.addClass(SETTINGS.selectedClass);
+					
+					event.preventDefault();
+				});
+				
+				nextLink.click(function(event){
+					if( currentImageNumber < links.length - 1 ){
+						links.eq(currentImageNumber + 1).click();
+					}
+					else{
+						links.eq(0).click();
+					}
 					
 					event.preventDefault();
 				});
