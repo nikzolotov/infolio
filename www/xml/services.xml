@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<services>
+	<service key="smart-tv" title="Smart-TV">
+		<div class="b-slide">
+			<div class="image">
+				<img src="./img/services/smart-tv.jpg" alt="Приложение Yota на Smart-TV"/>
+			</div>
+			<div class="desc">
+				<h3 class="title" style="margin-bottom: 22px;">Одними из&#160;первых в&#160;России мы&#160;начали разрабатывать приложения для Smart-TV</h3>
+				<p>Smart-TV&#160;&#8212; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&#160;телевизорах Samsung, LG, Panasonic и&#160;может выступать как одним из&#160;способов рекламы, так и&#160;приносить реальный доход.</p>
+				<p style="padding-right: 10px;">Мы&#160;разработали одни из&#160;самых крупных приложений для Smart-TV, Yota Музыка и&#160;Yota&#160;Play.</p>
+			</div>
+		</div>
+		<ul class="b-brands">
+			<li class="item samsung">Samsung<i class="image"><!----></i></li>
+			<li class="item lg">LG<i class="image"><!----></i></li>
+			<li class="item philips">Philips<i class="image"><!----></i></li>
+			<li class="item panasonic">Panasonic<i class="image"><!----></i></li>
+			<li class="item sony">Sony<i class="image"><!----></i></li>
+			<li class="item wd"><abbr title="Western Digital">WD<i class="image"><!----></i></abbr></li>
+		</ul>
+	</service>
+	<service class="sites" title="Сайты">
+		<div class="b-slide">
+			<div class="image">
+				<img src="./img/services/sites.jpg" alt="Браузеры"/>
+			</div>
+			<div class="desc">
+				<h3 class="title">Одним из&#160;основных направлений нашей деятельности является разработка веб-сервисов и&#160;сайтов</h3>
+				<p>Мы&#160;создаём решения разных видов и&#160;размеров, от&#160;промо-сайтов до&#160;крупных информационных систем. Также мы&#160;разрабатываем приложения для Facebook, Вконтакте.</p>
+			</div>
+		</div>
+		<ul class="b-brands">
+			<li class="item google" style="margin-left: 154px">Google<i class="image"><!----></i></li>
+			<li class="item facebook" style="margin-left: 100px;">Facebook<i class="image"><!----></i></li>
+			<li class="item html5" style="margin-left: 127px;">HTML5<i class="image"><!----></i></li>
+			<li class="item yandex" style="margin-left: 135px;">Yandex<i class="image"><!----></i></li>
+		</ul>
+	</service>
+	<service key="web-services" title="Веб-сервисы">
+		<div class="b-slide">
+			<div class="image">
+				<img src="./img/services/web-services.jpg" alt="Приложение для заказа столиков в баре Стрелка"/>
+			</div>
+			<div class="desc">
+				<h3 class="title">Одним из&#160;направлений нашей деятельности является разработка веб-сервисов</h3>
+				<p>Социальные сети всё глубже проникают в&#160;сферу бизнеса. Всё больше людей предпочитают общаться и&#160;получать информацию на&#160;Facebook или ВКонтакте. Своё представительство или приложение в&#160;социальной сети позволяет привлечь людей и&#160;создать положительный облик бренда. Что, если нужен функционал, который сложно реализовать обычными средствами? Нечто, выходящее из&#160;рамок обычного сайта. Тогда вам нужен веб-сервис. Мы&#160;разработали приложение для управления баром &gt;strelka.</p>
+			</div>
+		</div>
+		<ul class="b-brands">
+			<li class="item twitter" style="margin-left: 152px">Twitter<i class="image"><!----></i></li>
+			<li class="item facebook" style="margin-left: 190px;">Facebook<i class="image"><!----></i></li>
+			<li class="item vkontakte" style="margin-left: 181px;">Vkontakte<i class="image"><!----></i></li>
+		</ul>
+	</service>
+	<service key="mobile-apps" title="Приложения">
+		<div class="b-slide">
+			<div class="image">
+				<img src="./img/services/mobile-apps.jpg" alt="Телефоны"/>
+			</div>
+			<div class="desc">
+				<h3 class="title">Мы&#160;умеем разрабатывать приложения для мобильных платформ</h3>
+				<p>Мы&#160;разрабатываем приложения для мобильных платформ iOS и&#160;Android, обеспечивая не&#160;только клиентскую, но&#160;и&#160;серверную часть для онлайн-сервисов и&#160;игр.</p>
+			</div>
+		</div>
+		<ul class="b-brands">
+			<li class="item ios" style="margin-left: 156px">iOS<i class="image"><!----></i></li>
+			<li class="item android" style="margin-left: 98px;">Android<i class="image"><!----></i></li>
+		</ul>
+	</service>
+	<service key="seo" title="Интернет-маркетинг">
+		<div class="b-slide">
+			<div class="image">
+				<img src="./img/services/seo.png" alt="SEO"/>
+			</div>
+			<div class="desc">
+				<h3 class="title">Важно, чтобы ваш сайт легко было найти и&#160;чтобы пользователям нравилось находится на&#160;вашем сайте</h3>
+				<p>Для этого мы&#160;занимаемся поисковой оптимизацией, продвижением в&#160;поисковых системах Яндекс и&#160;Google, проводим аудиты удобства использования сайта, помогаем улучшить сайт для комфорта пользователей.</p>
+				<p>Но&#160;всегда конечным результатом является не&#160;сайт или приложение, а&#160;именно решение вашей задачи. Под решением мы&#160;понимаем комплексный подход и&#160;дальнейшее плодотворное сотрудничество.</p>
+			</div>
+		</div>
+		<ul class="b-brands">
+			<li class="item google" style="margin-left: 158px">Samsung<i class="image"><!----></i></li>
+			<li class="item yandex" style="margin-left: 112px;">Yandex<i class="image"><!----></i></li>
+			<li class="item rambler" style="margin-left: 95px;">Rambler<i class="image"><!----></i></li>
+		</ul>
+	</service>
+</services>

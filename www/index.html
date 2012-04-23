@@ -1,4 +1,7 @@
 ﻿@auto[]
+	$services[^xdoc::load[$DATA_DIR/services.xml]]
+	$services[^services.transform[$TEMPLATES_DIR/services.xslt]]
+	
 	$projects[^xdoc::load[$DATA_DIR/projects.xml]]
 	$projects[^projects.transform[$TEMPLATES_DIR/projects.xslt]]
 	
@@ -102,112 +105,7 @@
 					</div>
 				</div>
 				<div id="services" class="b-section">
-					<ul class="b-tab-links">
-						<li class="item">
-							<a class="link selected" href="#tab-smart-tv">Smart-TV<b class="b-icon b-icon-current-b"><b></b></b></a>
-						</li>
-						<li class="item">
-							<a class="link" href="#tab-sites">Сайты<b class="b-icon b-icon-current-b"><b></b></b></a>
-						</li>
-						<li class="item">
-							<a class="link" href="#tab-web-services">Веб-сервисы<b class="b-icon b-icon-current-b"><b></b></b></a>
-						</li>
-						<li class="item">
-							<a class="link" href="#tab-mobile-apps">Приложения<b class="b-icon b-icon-current-b"><b></b></b></a>
-						</li>
-						<li class="item last">
-							<a class="link" href="#tab-seo">Интернет-маркетинг<b class="b-icon b-icon-current-b"><b></b></b></a>
-						</li>
-					</ul>
-					<div class="b-tabs">
-						<div class="b-tabs-inner">
-							<div id="tab-smart-tv" class="b-tab">
-								<div class="b-slide">
-									<div class="image">
-										<img src="./img/services/smart-tv.jpg" alt="Приложение Yota на Smart-TV"/>
-									</div>
-									<div class="desc">
-										<h3 class="title" style="margin-bottom: 22px;">Одними из&nbsp;первых в&nbsp;России мы&nbsp;начали разрабатывать приложения для Smart-TV</h3>
-										<p>Smart-TV&nbsp;&mdash; это новая перспективная область рынка веб-разработки. Ваш сервис может появится на&nbsp;телевизорах Samsung, LG, Panasonic и&nbsp;может выступать как одним из&nbsp;способов рекламы, так и&nbsp;приносить реальный доход.</p>
-										<p style="padding-right: 10px;">Мы&nbsp;разработали одни из&nbsp;самых крупных приложений для Smart-TV, Yota Музыка и&nbsp;Yota&nbsp;Play.</p>
-									</div>
-								</div>
-								<ul class="b-brands">
-									<li class="item samsung">Samsung<i class="image"></i></li>
-									<li class="item lg">LG<i class="image"></i></li>
-									<li class="item philips">Philips<i class="image"></i></li>
-									<li class="item panasonic">Panasonic<i class="image"></i></li>
-									<li class="item sony">Sony<i class="image"></i></li>
-									<li class="item wd"><abbr title="Western Digital">WD<i class="image"></i></abbr></li>
-								</ul>
-							</div>
-							<div id="tab-sites" class="b-tab" style="display: none;">
-								<div class="b-slide">
-									<div class="image">
-										<img src="./img/services/sites.jpg" alt="Браузеры"/>
-									</div>
-									<div class="desc">
-										<h3 class="title">Одним из&nbsp;основных направлений нашей деятельности является разработка веб-сервисов и&nbsp;сайтов</h3>
-										<p>Мы&nbsp;создаём решения разных видов и&nbsp;размеров, от&nbsp;промо-сайтов до&nbsp;крупных информационных систем. Также мы&nbsp;разрабатываем приложения для Facebook, Вконтакте.</p>
-									</div>
-								</div>
-								<ul class="b-brands">
-									<li class="item google" style="margin-left: 154px">Google<i class="image"></i></li>
-									<li class="item facebook" style="margin-left: 100px;">Facebook<i class="image"></i></li>
-									<li class="item html5" style="margin-left: 127px;">HTML5<i class="image"></i></li>
-									<li class="item yandex" style="margin-left: 135px;">Yandex<i class="image"></i></li>
-								</ul>
-							</div>
-							<div id="tab-web-services" class="b-tab" style="display: none;">
-								<div class="b-slide">
-									<div class="image">
-										<img src="./img/services/web-services.jpg" alt="Приложение для заказа столиков в баре Стрелка"/>
-									</div>
-									<div class="desc">
-										<h3 class="title">Одним из&nbsp;направлений нашей деятельности является разработка веб-сервисов</h3>
-										<p>Социальные сети всё глубже проникают в&nbsp;сферу бизнеса. Всё больше людей предпочитают общаться и&nbsp;получать информацию на&nbsp;Facebook или ВКонтакте. Своё представительство или приложение в&nbsp;социальной сети позволяет привлечь людей и&nbsp;создать положительный облик бренда. Что, если нужен функционал, который сложно реализовать обычными средствами? Нечто, выходящее из&nbsp;рамок обычного сайта. Тогда вам нужен веб-сервис. Мы&nbsp;разработали приложение для управления баром &gt;strelka.</p>
-									</div>
-								</div>
-								<ul class="b-brands">
-									<li class="item twitter" style="margin-left: 152px">Twitter<i class="image"></i></li>
-									<li class="item facebook" style="margin-left: 190px;">Facebook<i class="image"></i></li>
-									<li class="item vkontakte" style="margin-left: 181px;">Vkontakte<i class="image"></i></li>
-								</ul>
-							</div>
-							<div id="tab-mobile-apps" class="b-tab" style="display: none;">
-								<div class="b-slide">
-									<div class="image">
-										<img src="./img/services/mobile-apps.jpg" alt="Телефоны"/>
-									</div>
-									<div class="desc">
-										<h3 class="title">Мы&nbsp;умеем разрабатывать приложения для мобильных платформ</h3>
-										<p>Мы&nbsp;разрабатываем приложения для мобильных платформ iOS и&nbsp;Android, обеспечивая не&nbsp;только клиентскую, но&nbsp;и&nbsp;серверную часть для онлайн-сервисов и&nbsp;игр.</p>
-									</div>
-								</div>
-								<ul class="b-brands">
-									<li class="item ios" style="margin-left: 156px">iOS<i class="image"></i></li>
-									<li class="item android" style="margin-left: 98px;">Android<i class="image"></i></li>
-								</ul>
-							</div>
-							<div id="tab-seo" class="b-tab" style="display: none;">
-								<div class="b-slide">
-									<div class="image">
-										<img src="./img/services/seo.png" alt="SEO"/>
-									</div>
-									<div class="desc">
-										<h3 class="title">Важно, чтобы ваш сайт легко было найти и&nbsp;чтобы пользователям нравилось находится на&nbsp;вашем сайте</h3>
-										<p>Для этого мы&nbsp;занимаемся поисковой оптимизацией, продвижением в&nbsp;поисковых системах Яндекс и&nbsp;Google, проводим аудиты удобства использования сайта, помогаем улучшить сайт для комфорта пользователей.</p>
-										<p>Но&nbsp;всегда конечным результатом является не&nbsp;сайт или приложение, а&nbsp;именно решение вашей задачи. Под решением мы&nbsp;понимаем комплексный подход и&nbsp;дальнейшее плодотворное сотрудничество.</p>
-									</div>
-								</div>
-								<ul class="b-brands">
-									<li class="item google" style="margin-left: 158px">Samsung<i class="image"></i></li>
-									<li class="item yandex" style="margin-left: 112px;">Yandex<i class="image"></i></li>
-									<li class="item rambler" style="margin-left: 95px;">Rambler<i class="image"></i></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					^services.string[$XSL_OUTPUT]
 				</div>
 				<div id="about" class="b-section">
 					<div class="b-about">
