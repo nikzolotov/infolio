@@ -430,6 +430,7 @@ SUB {
 	position: absolute;
 	top: 0;
 	right: -130px;
+	display: none;
 	}
 	.b-contents .container {
 		width: 100px;
