@@ -909,27 +909,30 @@ SUB {
 			}
 
 /* Hire instructions */
-.b-hire .title {
-	margin-top: 0;
+.b-hire {
+	min-width: 760px;
 	}
-.b-hire .desc {
-	margin: 38px 0 28px 0;
-	font: italic 20px/24px Georgia, Times, "Times New Roman", serif;
-	text-align: center;
-	}
-	.b-hire .link {
-		border-bottom: 1px dashed;
-		text-decoration: none;
-		color: #383E43;
+	.b-hire .title {
+		margin-top: 12px;
 		}
-	.b-hire .selected {
-		border: none;
+	.b-hire .desc {
+		margin: 38px 0 28px 0;
+		font: italic 20px/24px Georgia, Times, "Times New Roman", serif;
+		text-align: center;
 		}
-.b-hire .image {
-	display: block;
-	height: 147px;
-	margin: 0 auto 23px auto;
-	}
+		.b-hire .link {
+			border-bottom: 1px dashed;
+			text-decoration: none;
+			color: #383E43;
+			}
+		.b-hire .selected {
+			border: none;
+			}
+	.b-hire .image {
+		display: block;
+		height: 147px;
+		margin: 0 auto 14px auto;
+		}
 
 /* =Containers
 --------------------------------------- */
@@ -998,13 +1001,30 @@ SUB {
 .b-input,
 .b-textarea {
 	margin: 0;
-	padding: 6px 8px;
+	padding: 7px 9px;
 	font-size: 12px;
 	line-height: 15px;
 	font-style: italic;
+	border: none;
+	background: #EFEFEF;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	
+	-moz-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, .75);
+	-webkit-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, .75);
+	-o-box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, .75);
+	box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, .75);
 	}
 .b-textarea {
 	display: block;
+	overflow: auto;
+	}
+.b-input:focus,
+.b-textarea:focus {
+	outline: none;
+	background: #F5F5F5;
 	}
 
 /* Input with grey hint */
@@ -1031,7 +1051,21 @@ SUB {
 /* Submit button */
 .b-submit {
 	margin: 0;
-	padding: 5px 14px;
+	padding: 6px 14px;
+	border: 1px solid #CCC;
+	
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	
+	background: #E3E3E3 url("../img/containers/button-bg.png");
+	background: -webkit-linear-gradient(#FCFCFC, #CCC);
+	background: -moz-linear-gradient(#FCFCFC, #CCC);
+	background: -ms-linear-gradient(#FCFCFC, #CCC);
+	background: -o-linear-gradient(#FCFCFC, #CCC);
+	background: linear-gradient(#FCFCFC, #CCC);
+	
+	text-shadow: 0 1px 0 #FFF;
 	}
 
 /* Form field */
@@ -1091,7 +1125,7 @@ SUB {
 
 /* Hire */
 .b-hire-form {
-	min-height: 170px;
+	min-height: 161px;
 	width: 640px;
 	margin: 0 40px 0 80px;
 	overflow: hidden;
@@ -1102,5 +1136,5 @@ SUB {
 		padding-right: 40px;
 		}
 		.b-hire-form .b-textarea {
-			height: 118px;
+			height: 76px;
 			}
