@@ -41,7 +41,7 @@
 		^try{
 			^mail:send[
 				$.from[$MAIN:SYSTEM_EMAIL]
-				$.to[$MAIN:MANAGERS_EMAIL]
+				$.to[^managersEmail[hr]]
 				$.subject[Сайт студии: отклик на вакансию]
 				$.html{
 					<p>Привет, у нас новый соискатель:</p>

@@ -26,7 +26,7 @@
 		^try{
 			^mail:send[
 				$.from[$MAIN:SYSTEM_EMAIL]
-				$.to[$MAIN:MANAGERS_EMAIL]
+				$.to[^managersEmail[hi]]
 				$.subject[Сайт студии: предложение сотрудничества]
 				$.html{
 					<p>Привет, сообщение из формы обратной связи:</p>
