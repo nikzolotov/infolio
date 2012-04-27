@@ -14,7 +14,6 @@
 @managersEmail[_type]
 	$managers[^table::load[/../resources/managers.cfg]]
 	$managersColumns[^managers.columns[]]
-	$managersString[]
 	
 	^managersColumns.menu{
 		^if($managersColumns.column eq $_type){
