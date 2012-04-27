@@ -1088,7 +1088,9 @@ SUB {
 	padding: 6px 14px;
 	border: 1px solid #CCC;
 	text-align: center;
+	text-decoration: none;
 	line-height: 16px;
+	color: #383E43 !important;
 	
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -1190,3 +1192,30 @@ SUB {
 		.b-hire-form .b-textarea {
 			height: 76px;
 			}
+
+/* =Error pages
+--------------------------------------- */
+
+/* 404 */
+.b-404 {
+	width: 760px;
+	padding: 18px 36px 66px 36px;
+	text-align: center;
+	}
+	.b-404 .logo {
+		margin-bottom: 40px;
+		text-align: left;
+		}
+		.b-404 .image {
+			display: block;
+			opacity: .2;
+			}
+	.b-404 .title {
+		margin: 0 0 28px 0;
+		font-size: 26px;
+		line-height: 28px;
+		}
+	.b-404 .desc {
+		margin-bottom: 82px;
+		font: normal 16px/20px Georgia, Times, "Times New Roman", serif;
+		}
