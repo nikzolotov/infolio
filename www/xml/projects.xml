@@ -11,15 +11,15 @@
 			<flash file="file_name" thumbnail="file_name" alt="some text (optional)" [some HTML OBJECT params] />
 		</frames>
 	</project-->
-	<project key="center-skad">
+	<project key="skad">
 		<title>Сайт</title>
 		<link>www.center-skad.ru</link>
 		<year>2011</year>
 		<desc>Основная цель сайта Центра Каркасного Домостроения — создать настроение и показать строящиеся и уже построенные дома, именно поэтому специально для этого сайта была проведена фотосессия продолжительностью в полгода.</desc>
 		<frames>
-			<image file="01.jpg" thumbnail="th_01.jpg"/>
-			<image file="02.jpg" thumbnail="th_02.jpg"/>
-			<image file="03.jpg" thumbnail="th_03.jpg"/>
+			<image file="skad_01.png" thumbnail="skad_small_01.png"/>
+			<image file="skad_02.png" thumbnail="skad_small_02.png"/>
+			<image file="skad_03.png" thumbnail="skad_small_03.png"/>
 		</frames>
 	</project>
 	<project key="tsm">
