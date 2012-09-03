@@ -52,7 +52,7 @@
 						<p><strong>Контакты</strong>: $_params.contacts</p>
 					}
 					^if(def $_params.else){
-						<p><strong>Ещё</strong>: $_params.else</p>
+						<p><strong>Ещё</strong>: ^replaceNewlinesByBr[$_params.else]</p>
 					}
 					^if(def $_params.resumePath){
 						<p>Так же он приложил <a href="http://${env:SERVER_NAME}${MAIN:UPLOAD_DIR}$_params.resumePath">резюме</a>.</p>

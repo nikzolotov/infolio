@@ -1,6 +1,6 @@
 ﻿@main[]
 	^sendEmail[
-		$.feedback[$name]
+		$.feedback[$feedback]
 		$.name[$name]
 		$.contacts[$contacts]
 	]
@@ -31,7 +31,7 @@
 				$.html{
 					<p>Привет, сообщение из формы обратной связи:</p>
 					^if(def $_params.feedback){
-						<p><strong>Суть идеи</strong>: $_params.feedback</p>
+						<p><strong>Суть идеи</strong>: ^replaceNewlinesByBr[$_params.feedback]</p>
 					}
 					^if(def $_params.name){
 						<p><strong>Имя</strong>: $_params.name</p>

@@ -22,3 +22,8 @@
 	}
 	
 	$result[^managers.menu{$managers.email}[, ]]
+
+@replaceNewlinesByBr[_text]
+	^if(def $_text){
+		$result[^_text.match[\n][g]{<br/>}]
+	}
