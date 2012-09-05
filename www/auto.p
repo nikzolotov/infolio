@@ -9,7 +9,7 @@
 		$.omit-xml-declaration[yes]
 	]
 	
-	$SYSTEM_EMAIL[robot@infolio.ru]
+	$SYSTEM_EMAIL[hi@infolio.ru]
 
 @managersEmail[_type]
 	$managers[^table::load[/../resources/managers.cfg]]
