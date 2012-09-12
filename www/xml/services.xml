@@ -61,7 +61,7 @@
 			<li class="item vkontakte" style="margin-left: 181px;">Vkontakte<i class="image"><!----></i></li>
 		</ul>
 	</service>
-	<service key="mobile-apps" title="Приложения">
+	<service-rem key="mobile-apps" title="Приложения">
 		<div class="b-slide">
 			<div class="image">
 				<img src="./img/services/mobile-apps.jpg" alt="Телефоны"/>
@@ -75,7 +75,7 @@
 			<li class="item ios" style="margin-left: 156px">iOS<i class="image"><!----></i></li>
 			<li class="item android" style="margin-left: 98px;">Android<i class="image"><!----></i></li>
 		</ul>
-	</service>
+	</service-rem>
 	<service key="seo" title="Интернет-маркетинг">
 		<div class="b-slide">
 			<div class="image">
