@@ -7,8 +7,11 @@
 			<xsl:apply-templates select="client"/>
 		</ul>
 	-->
-		
-		<ul class="b-tab-links">
+		<ul>
+			<xsl:attribute name="class">
+				<xsl:text>b-tab-links b-tab-links-</xsl:text>
+				<xsl:value-of select="count(service)"/>
+			</xsl:attribute>
 			<xsl:apply-templates select="service" mode="navigation"/>
 		</ul>
 		<div class="b-tabs">

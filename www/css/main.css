@@ -548,7 +548,7 @@ SUB {
 		.b-tab-links .link {
 			position: relative;
 			display: block;
-			padding: 13px 18px;
+			padding: 13px 0;
 			background: #49505D;
 			text-decoration: none;
 			text-align: center;
@@ -568,6 +568,30 @@ SUB {
 		width: 180px;
 		margin-right: 0;
 		}
+.b-tab-links-3 .item {
+	width: 299px;
+	}
+.b-tab-links-3 .last {
+	width: 300px;
+	}
+.b-tab-links-4 .item {
+	width: 224px;
+	}
+.b-tab-links-4 .last {
+	width: 225px;
+	}
+.b-tab-links-6 .item {
+	width: 149px;
+	}
+.b-tab-links-6 .last {
+	width: 150px;
+	}
+.b-tab-links-7 .item {
+	width: 128px;
+	}
+.b-tab-links-7 .last {
+	width: 126px;
+	}
 
 /* Numbered tabs */
 .b-circle-tab-links {
