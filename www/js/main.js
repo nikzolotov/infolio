@@ -106,9 +106,12 @@
 	/* Форма обратной связи */
 	var feedbackContainer = $('#feedback'),
 		feedbackForm = $('#feedback-form'),
-		feedbackInputs = $('input, textarea', feedbackForm),
+		feedbackInputs = $('input[type=text], textarea', feedbackForm),
+		feedbackSubmit = $('input[type=submit]', feedbackForm),
 		feedbackCloseButton = $('#feedback-close'),
-		feedbackFormLoader = $(loaderHTMLTemplate);
+		feedbackFormLoader = $(loaderHTMLTemplate),
+		submitDisabledClass = 'b-submit-disabled',
+		hintInputClass = 'b-hint-input';
 	
 	feedbackFormLoader.appendTo(feedbackContainer);
 	
@@ -132,6 +135,15 @@
 		event.preventDefault();
 	});
 	
+	feedbackInputs.keyup(function(){
+		validateForm(feedbackInputs, feedbackSubmit);
+	})
+	.blur(function(){
+		validateForm(feedbackInputs, feedbackSubmit);
+	});
+	
+	feedbackInputs.eq(0).keyup();
+	
 	feedbackCloseButton.live('click', function(event){
 		$(this).parent().remove();
 		
@@ -149,7 +161,8 @@
 		hireLink = $('#hire-link'),
 		hireImage = $('#hire-image'),
 		hireForm = $('#hire-form'),
-		hireInputs = $('input, textarea', hireForm),
+		hireInputs = $('input[type=text], textarea', hireForm),
+		hireSubmit = $('input[type=submit]', hireForm),
 		hireFileContainer = $('#hire-resume-container'),
 		hireCloseButton = $('#hire-close'),
 		hireFormLoader = $(loaderHTMLTemplate);
@@ -187,6 +200,15 @@
 		} 
 	});
 	
+	hireInputs.keyup(function(){
+		validateForm(hireInputs, hireSubmit);
+	})
+	.blur(function(){
+		validateForm(hireInputs, hireSubmit);
+	});
+	
+	hireInputs.eq(0).keyup();
+	
 	hireCloseButton.live('click', function(event){
 		modal.hide();
 		
@@ -199,4 +221,28 @@
 		
 		event.preventDefault();
 	});
+	
+	/* Простейшая валидация форм */
+	function validateForm( inputs, submit ){
+		var allInputsAreClear = true;
+		
+		inputs.each(function(){
+			var thisInput = $(this),
+				thisValue = thisInput.val(),
+				thisHint = $('label[for=' + thisInput.attr('id') + ']').text();
+			
+			if( thisValue != '' && thisValue != thisHint ){
+				allInputsAreClear = false;
+			}
+		});
+		
+		if( allInputsAreClear ){
+			submit.parent().addClass(submitDisabledClass);
+			submit.attr('disabled', 'disabled');
+		}
+		else {
+			submit.parent().removeClass(submitDisabledClass);
+			submit.removeAttr('disabled', 'disabled');
+		}
+	}
 });
