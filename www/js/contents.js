@@ -36,11 +36,8 @@ var contents = (function(){
 		});
 		
 		_links.click(function(event){
-			var thisLink = $(this),
-				thisLinkTarget = thisLink.attr('href').substr(1);
-			
-			scrollToSection( thisLinkTarget );
-			moveSlider( thisLink.position().top );
+			showSection( $(this) );
+			changeHash( $(this) );
 			
 			event.preventDefault();
 		});
@@ -112,17 +109,25 @@ var contents = (function(){
 			// При определённой конфигурации (много коротких блоков) возможен вариант, что указатель показывает не на тот блок
 			for( var i = 0; i < _sectionsAreas.length; i++ ){
 				if( _sliderOptions.offsetPoint >= _sectionsAreas[i].begin && _sliderOptions.offsetPoint < _sectionsAreas[i].end ){
-					_slider.css('top', _sliderOptions.height * i);
-					_sliderContents.css('top', _sliderOptions.height * i * -1);
-					
+					if( _slider.position().top != _sliderOptions.height * i ){
+						_slider.css('top', _sliderOptions.height * i);
+						_sliderContents.css('top', _sliderOptions.height * i * -1);
+					}
 					break;
 				}
 			}
 		}
 	}
 	
+	function showSection( link ){
+		var linkTarget = link.attr('href').substr(1);
+		
+		scrollToSection( linkTarget );
+		moveSlider( link.position().top );
+	}
+	
 	function scrollToSection( sectionName ){
-		var targetSection = _sections.filter(function(){ return $(this).attr('id') == sectionName; }),
+		var targetSection = _sections.filter(function(){ return $(this).attr('id') == 'tab-' + sectionName; }),
 			targetSectionArea = _sectionsAreas[_sections.index(targetSection)],
 			scrollTopToTarget = targetSection.offset().top - SETTINGS.fixedTopPosition;
 		
@@ -149,6 +154,22 @@ var contents = (function(){
 		_sliderContents.animate({
 			top: -to
 		}, SETTINGS.scrollTime);
+	}
+	
+	function changeHash( link ){
+		document.location.hash = link.attr('href').substr(1);
+	}
+	
+	function scrollByHash(){
+		if( document.location.hash ){
+			var linkFromHash = _links.filter(function(){
+				return $(this).attr('href') == document.location.hash;
+			});
+			
+			if( linkFromHash.length ){
+				showSection( linkFromHash );
+			}
+		}
 	}
 	
 	return {
@@ -183,12 +204,23 @@ var contents = (function(){
 			hightlightSection();
 			
 			assignEvents();
+			
+			scrollByHash();
 		},
 		update: function(){
 			updateSectionAreas();
 		},
 		isHidden: function(){
 			return _contents.css('display') == 'none';
+		},
+		scroll: function( hash ){
+			var targetLink = _links.filter(function(){
+				return $(this).attr('href') == '#' + hash;
+			});
+			
+			if( targetLink.length ){
+				showSection( targetLink );
+			}
 		}
 	};
 })();

@@ -75,7 +75,7 @@
 	
 	<xsl:template match="project" mode="navigation">
 		<li class="item">
-			<a class="link" href="#tab-portfolio-{@key}">
+			<a class="link" href="#portfolio-{@key}">
 				<xsl:value-of select="position()"/>
 			</a>
 		</li>

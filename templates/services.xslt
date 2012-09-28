@@ -26,7 +26,7 @@
 			<xsl:if test="position() = last()">
 				<xsl:attribute name="class">item last</xsl:attribute>
 			</xsl:if>
-			<a class="link" href="#tab-{@key}">
+			<a class="link" href="#services-{@key}">
 				<xsl:value-of select="@title"/>
 				<b class="b-icon b-icon-current-b">
 					<b><xsl:text><![CDATA[]]></xsl:text></b>
@@ -36,7 +36,7 @@
 	</xsl:template>
 	
 	<xsl:template match="service">
-		<div id="tab-{@key}" class="b-tab">
+		<div id="tab-services-{@key}" class="b-tab">
 			<xsl:if test="position() != 1">
 				<xsl:attribute name="style">display: none;</xsl:attribute>
 			</xsl:if>

@@ -28,7 +28,7 @@
 			<li class="item wd"><abbr title="Western Digital">WD<i class="image"><!----></i></abbr></li>
 		</ul>
 	</service>
-	<service class="sites" title="Сайты">
+	<service key="sites" title="Сайты">
 		<div class="b-slide">
 			<div class="image">
 				<img src="./img/services/sites.jpg" alt="Браузеры"/>

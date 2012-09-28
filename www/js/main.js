@@ -7,7 +7,7 @@
 		header = $('.l-header'),
 		logo = $('.b-logo .image', header);
 		footer = $('.l-footer'),
-		contactsSection = $('#contacts'),
+		contactsSection = $('#tab-contacts'),
 		footerPadding = 0;
 	
 	logo.load(function(){
@@ -41,13 +41,13 @@
 	}
 	
 	/* Табы услуг */
-	$('#services').tabs({
+	$('#tab-services').tabs({
 		linkSelector: '.b-tab-links .link',
 		tabSelector: '.b-tab'
 	});
 	
 	/* Табы проектов в портфолио */
-	$('#portfolio').tabs({
+	$('#tab-portfolio').tabs({
 		linkSelector: '.b-circle-tab-links .link',
 		tabSelector: '.b-tab'
 	});
@@ -64,7 +64,7 @@
 	$('.b-hint-label').hints();
 	
 	/* Форма логина */
-	var loginModalLink = $('#clients .js-modal'),
+	var loginModalLink = $('#tab-clients .js-modal'),
 		loginModal = $('#login .b-modal-window'),
 		loginForm = $('#login-form'),
 		loaderHTMLTemplate = '<div class="b-loading-overlay"><span class="b-loading"><img class="image" src="./img/loading.gif" alt="Loading"/></span></div>',
@@ -143,7 +143,7 @@
 	});
 	
 	/* Форма отправки резюме */
-	var hireModalLink = $('#contacts .js-modal'),
+	var hireModalLink = $('#tab-contacts .js-modal'),
 		hireModal = $('#hire .b-modal-window'),
 		hireContainer = $('#hire .b-hire'),
 		hireLink = $('#hire-link'),

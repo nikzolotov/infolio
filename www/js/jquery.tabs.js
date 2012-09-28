@@ -27,16 +27,11 @@
 			
 			initTabs();
 			assignEvents();
+			showTabByHash();
 			
 			function initTabs(){
 				if( SETTINGS.animation.type == 'horizontal' ){
-					
-					// Не знаю, как вернуть на место элемент, если его показал браузер по #id
-					// Никакие css-свойства не действуют. Поэтому пока так —
-					// элементы с id изначально спрятаны, и почти сразу мы их показываем.
-					setTimeout(function(){
-						tabs.show();
-					}, 500);
+					tabs.show();
 				}
 				else {
 					tabs.filter(':not(:first)').hide();
@@ -58,23 +53,26 @@
 			}
 			
 			function clickHandler( event ){
-				event.preventDefault();
-				
 				switchTab( $(this) );
+				changeHash( $(this) );
 				
-				if( $.isFunction(SETTINGS.onSwitchTab) ) 
+				if( $.isFunction(SETTINGS.onSwitchTab) ){
 					SETTINGS.onSwitchTab.call(this, event);
+				}
+				
+				event.preventDefault();
 			}
 			
 			function clickOnlyHandler( event ){
-				event.preventDefault();
-				
 				switchTab( $(this) );
+				changeHash( $(this) );
+				
+				event.preventDefault();
 			}
 			
 			function switchTab( link ) {
-				var linkHrefTarget = link.attr('href').substr(1),
-					targetTab = tabs.filter(function(){ return $(this).attr('id') == linkHrefTarget; });
+				var thisLinkTarget = link.attr('href').substr(1),
+					targetTab = tabs.filter(function(){ return $(this).attr('id') == 'tab-' + thisLinkTarget; });
 				
 				if( SETTINGS.animation.type == 'horizontal' ){
 					tabsParent.animate({
@@ -88,6 +86,32 @@
 				
 				links.removeClass(SETTINGS.selectedClass);
 				link.addClass(SETTINGS.selectedClass);
+			}
+			
+			function changeHash( link ){
+				document.location.hash = link.attr('href').substr(1);
+			}
+			
+			function showTabByHash(){
+				if( document.location.hash ){
+					var linkFromHash = links.filter(function(){
+						return $(this).attr('href') == document.location.hash;
+					});
+					
+					if( linkFromHash.length ){
+						// Хардкод для перемотки страницы к блоку с табами
+						var sectionFromHash = document.location.hash.substr(1),
+							sectionDividerPosition = sectionFromHash.indexOf('-');
+						
+						if( sectionDividerPosition != -1 ){
+							sectionFromHash = sectionFromHash.substr(0, sectionDividerPosition);
+						}
+						
+						contents.scroll( sectionFromHash );
+
+						switchTab( linkFromHash );
+					}
+				}
 			}
 		});
 	};
