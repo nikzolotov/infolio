@@ -27,3 +27,9 @@
 	^if(def $_text){
 		$result[^_text.match[\n][g]{<br/>}]
 	}
+
+@GET_ip[]
+	$result[$env:REMOTE_ADDR]
+	^if(def $env:HTTP_X_FORWARDED_FOR){
+		$result[$env:HTTP_X_FORWARDED_FOR]
+	}

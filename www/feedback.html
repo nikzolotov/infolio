@@ -3,6 +3,7 @@
 		$.feedback[$feedback]
 		$.name[$name]
 		$.contacts[$contacts]
+		$.ip[$ip]
 	]
 	
 	<div class="b-message">
@@ -38,6 +39,9 @@
 					}
 					^if(def $_params.contacts){
 						<p><strong>Контакты</strong>: $_params.contacts</p>
+					}
+					^if(def $_params.ip){
+						<p><strong>IP-адрес</strong>: $_params.ip</p>
 					}
 				}
 				$.text[]

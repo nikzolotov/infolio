@@ -15,6 +15,7 @@
 		$.contacts[$contacts]
 		$.else[$else]
 		$.resumePath[^if(def $resume){/hr/$resumeMonth/${resumeName}.$resumeExt}]
+		$.ip[$ip]
 	]
 	^if(def $resume){
 		^resume.save[binary;$MAIN:UPLOAD_DIR/hr/$resumeMonth/${resumeName}.$resumeExt]
@@ -56,6 +57,9 @@
 					}
 					^if(def $_params.resumePath){
 						<p>Так же он приложил <a href="http://${env:SERVER_NAME}${MAIN:UPLOAD_DIR}$_params.resumePath">резюме</a>.</p>
+					}
+					^if(def $_params.ip){
+						<p><strong>IP-адрес</strong>: $_params.ip</p>
 					}
 				}
 				$.text[]
